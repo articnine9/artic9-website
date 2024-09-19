@@ -1,0 +1,21 @@
+.bg-color-dark{
+    background-color: #000;
+
+}
+
+.cntnt{
+    color: white !important;
+}
+
+
+.icns{
+    color: #cacaca;
+}
+.footer-link{
+    color: white !important;
+    text-decoration: none !important;
+}
+.footer-link:hover{
+    color: gold !important;
+}
+
