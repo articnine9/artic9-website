@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Use Link for routing
+import { Link } from "react-router-dom"; 
 import Logo from "../../Assets/logo1.png";
-import "./Header.css"; // Ensure this CSS file is imported
+import "./Header.css"; 
 
 const Header = () => {
   return (
@@ -168,7 +168,7 @@ const Header = () => {
               <path
                 className="color000000 svgShape"
                 fill="none"
-                stroke="black"
+                stroke="#ffc107"
                 strokeWidth="10"
                 strokeLinecap="round"
                 strokeLinejoin="round"

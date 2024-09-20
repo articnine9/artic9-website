@@ -34,27 +34,28 @@ const Footer = () => {
               >
                 Services
               </h5>
-              <div>
+              <div className="mb-4">
                 <a href="/socialmedia" className="footer-link">
                 &gt;&gt;Social Media Marketing
                 </a>
               </div>
-              <div>
+              <div className="mb-4">
                 <a href="/websitedev" className="footer-link">
-                &gt;&gt; Web Developing
+                &gt;&gt;Web Developing
                 </a>
               </div>
-              <div>
+              <div className="mb-4">
                 <a href="/videoprod" className="footer-link">
                 &gt;&gt;Video Production
                 </a>
               </div>
-              <div>
+              <div className="mb-4">
                 <a href="/searchengine" className="footer-link">
                 &gt;&gt;SEO
                 </a>
               </div>
             </div>
+
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h5
                 className="text-uppercase fw-bold mb-4"
@@ -62,22 +63,22 @@ const Footer = () => {
               >
                 Services
               </h5>
-              <div>
+              <div className="mb-4">
                 <a href="/socialmedia" className="footer-link">
                 &gt;&gt;Social Media Marketing
                 </a>
               </div>
-              <div>
+              <div className="mb-4">
                 <a href="/websitedev" className="footer-link">
                 &gt;&gt;Web Developing
                 </a>
               </div>
-              <div>
+              <div className="mb-4">
                 <a href="/videoprod" className="footer-link">
                 &gt;&gt;Video Production
                 </a>
               </div>
-              <div>
+              <div className="mb-4">
                 <a href="/searchengine" className="footer-link">
                 &gt;&gt;SEO
                 </a>
@@ -91,8 +92,8 @@ const Footer = () => {
               >
                 Contact
               </h5>
-              <div>
-                <FaPhoneAlt className="icns" />
+              <div className="mb-4">
+                <FaPhoneAlt className="icns mx-2" />
                 <a
                   href="tel:+919003442463"
                   target="_blank"
@@ -103,27 +104,26 @@ const Footer = () => {
                   +91 90034 42463
                 </a>
               </div>
-              <div>
-                <FaEnvelope className="icns" />
+              <div className="mb-4">
+                <FaEnvelope className="icns mx-2" />
                 <a
                   href="mailto:hi@artic9.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-link"
                 >
-                  hi@artic9.com
+                   hi@artic9.com
                 </a>
               </div>
-              <div>
-                <IoHomeSharp className="icns" />
+              <div className="mb-4">
+                <IoHomeSharp className="icns mx-2" />
                 <a
                   href="https://www.google.com/maps/place/Artic+Nine+Creative+Agency/@8.1862086,77.4257656,17.79z/data=!4m6!3m5!1s0x3b04f1246b9aa969:0xfa80cd8763303aa8!8m2!3d8.1861488!4d77.4254668!16s%2Fg%2F11fn7v1vn7?entry=ttu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="footer-link"
+                  className="footer-link "
                 >
-                  {" "}
-                  30A, Gnanai St, Nagercoil, Tamil Nadu - 629001
+                  30A, Gnanai St, Nagercoil, Tamil Nadu <p style={{textIndent:"33px"}}>- 629001</p>
                 </a>
               </div>
             </div>
@@ -142,7 +142,7 @@ const Footer = () => {
         <section className="mb-4 text-center">
           <a
             data-mdb-ripple-init
-            className="btn text-white btn-floating m-1"
+            className="btn text-white btn-floating m-1 "
             style={{ backgroundColor: "#3b5998" }}
             href="#!"
             role="button"

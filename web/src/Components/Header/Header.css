@@ -1,6 +1,7 @@
 .custom-navbar {
     background-color: white; 
     padding: 0.5rem 0; 
+   position: static;
   }
   
   .navbar-brand {
@@ -44,8 +45,8 @@
   cursor: pointer;
   transform: translateY(0px);
   position: relative;
-  background: #ffc107;;
-  color: black;
+  background: #000;
+  color: #ffc107;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
   transition: 150ms all ease-in-out;
 }
@@ -55,7 +56,7 @@
   width: 54px;
   height: 54px;
   transition: all 0.5s ease-in-out;
-  color: black;
+  color: #ffc107;
 
 }
 
@@ -65,7 +66,7 @@
     inset 0 16px 2px -15px rgba(0, 0, 0, 0),
     inset 0 0 0 1px rgba(255, 255, 255, 0.15),
     inset 0 1px 20px rgba(0, 0, 0, 0.1),
-    0 0 0 #ffc107,
+    0 0 0 #000000,
     0 0 0 2px rgba(255, 255, 255, 0.5),
     0 0 0 rgba(0, 0, 0, 0),
     0 0 0 rgba(0, 0, 0, 0);
@@ -75,7 +76,7 @@
     inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
     inset 0 0 0 1px rgba(255, 255, 255, 0.3),
     inset 0 1px 20px rgba(0, 0, 0, 0),
-    0 3px 0 #ffc107,
+    0 3px 0 #000000,
     0 3px 2px rgba(0, 0, 0, 0.2),
     0 5px 10px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
