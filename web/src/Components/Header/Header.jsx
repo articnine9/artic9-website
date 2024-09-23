@@ -7,6 +7,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container-fluid d-flex justify-content-center align-items-center">
+        <div className="gap"></div>
         <Link className="navbar-brand" to="/">
           <img src={Logo} alt="logo" className="logo" />
         </Link>
@@ -24,7 +25,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link className="nav-link " to="/story" aria-current="page">
+              <Link className="nav-link" to="/story" aria-current="page">
                 Our Story
               </Link>
             </li>
@@ -33,7 +34,6 @@ const Header = () => {
                 className="nav-link dropdown-toggle"
                 to="#"
                 role="button"
-                data-bs-toggle="dropdown"
                 aria-expanded="false"
                 aria-current="page"
               >
@@ -41,19 +41,13 @@ const Header = () => {
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to="/gtholiday">
-                    GT Holidays
-                  </Link>
+                  <Link className="dropdown-item" to="/gtholiday">GT Holidays</Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/harrisnadar">
-                    Harris Nadar Jewellery
-                  </Link>
+                  <Link className="dropdown-item" to="/harrisnadar">Harris Nadar Jewellery</Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/tino">
-                    Tino Engineering
-                  </Link>
+                  <Link className="dropdown-item" to="/tino">Tino Engineering</Link>
                 </li>
               </ul>
             </li>
@@ -151,7 +145,7 @@ const Header = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link " to="/contact" aria-current="page">
+              <Link className="nav-link" to="/contact" aria-current="page">
                 Work with us
               </Link>
             </li>
@@ -178,6 +172,7 @@ const Header = () => {
             <span className="text">Connect with us</span>
           </button>
         </div>
+        <div className="gap"></div>
       </div>
     </nav>
   );

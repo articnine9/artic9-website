@@ -25,7 +25,6 @@ const Approutes = () => {
   return (
     <>
       <Router>
-        {" "}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

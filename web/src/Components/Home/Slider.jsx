@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos"; 
-import "aos/dist/aos.css"; 
-import "./Home.css"; 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./Home.css";
 import gtmain from "../../Assets/s11.png";
 import gtlogo from "../../Assets/gt-logo.png";
-
+import Snowmain from "../../Assets/b2.png";
+import Snowlogo from "../../Assets/clients-logo/snowch-logo.png";
 const Slider = () => {
   const slides = [
     {
@@ -17,8 +18,8 @@ const Slider = () => {
       cnt5: "Learn More",
     },
     {
-      image: gtmain,
-      logo: gtlogo,
+      image: Snowmain,
+      logo: Snowlogo,
       cnt1: "Branding",
       cnt2: "UI & UX Designs",
       cnt3: "Product Development",
@@ -31,16 +32,16 @@ const Slider = () => {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    AOS.init(); 
-    
+    AOS.init();
+
     const interval = setInterval(() => {
       setFade(true);
       setTimeout(() => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
         setFade(false);
-        AOS.refresh(); 
+        AOS.refresh();
       }, 500);
-    }, 5000); 
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -49,7 +50,7 @@ const Slider = () => {
     <div className="slider-container">
       <div className={`slides ${fade ? "fade-out" : "fade-in"}`}>
         {/* Image Section */}
-        <div className="slider-image" data-aos="fade-right"> 
+        <div className="slider-image" data-aos="fade-right">
           <img
             src={slides[currentSlide].image}
             alt="slider"
@@ -58,7 +59,7 @@ const Slider = () => {
         </div>
 
         {/* Content Section */}
-        <div className="slider-content" data-aos="fade-left"> 
+        <div className="slider-content" data-aos="fade-left">
           <img
             src={slides[currentSlide].logo}
             alt="logo"
@@ -66,8 +67,12 @@ const Slider = () => {
           />
           <br /> <br />
           <div>
-            <span className="spn">{slides[currentSlide].cnt1} <b>|</b> </span>
-            <span className="spn">{slides[currentSlide].cnt2} <b>|</b> </span>
+            <span className="spn">
+              {slides[currentSlide].cnt1} <b>|</b>{" "}
+            </span>
+            <span className="spn">
+              {slides[currentSlide].cnt2} <b>|</b>{" "}
+            </span>
             <span className="spn">{slides[currentSlide].cnt3}</span>
           </div>
           <br /> <br />

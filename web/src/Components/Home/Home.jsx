@@ -1,17 +1,24 @@
 import React from "react";
 import "./Home.css";
-import Slider from "./Slider";
+
 import Boy from "../../Assets/boy1.png";
 import Img from "../../Assets/platez.png";
 import Harris from "../../Assets/harris2.png";
 import Bfour from "../../Assets/b4.png";
 import Snowch from "../../Assets/b2.png";
-import AnotherSlider from "./AnotherSlider";
-import ServiceTab from "./ServiceTab";
 import Ab from "../../Assets/anantha-bavan.png";
+import Seo from "../../Assets/seo.webp";
+import Vid from "../../Assets/video.webp";
+import Web from "../../Assets/web.webp";
+import Abtgt from "../../Assets/about-gt.webp";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Client from "./Client";
+import Testimonial from "./Testimonial";
+import Slider from "./Slider";
+import AnotherSlider from "./AnotherSlider";
+import ServiceTab from "./ServiceTab";
+
 const Home = () => {
   const services = [
     { title: "Marketing Masters", number: "01" },
@@ -296,9 +303,9 @@ const Home = () => {
                     <div className="td-faq-body td-faq-body-sub-content color-grey">
                       Make your
                       <b style={{ fontWeight: 600 }}>
-                        audience <br /> remind you
+                        &nbsp; audience <br /> remind you
                       </b>
-                      all time
+                      &nbsp; all time
                     </div>
 
                     <div className="font-bold">
@@ -340,7 +347,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="#">Know More</a>
+                    <a href="/socialmedia">Know More</a>
                   </div>
                   <div className="taeled-btn3 text-center position-relative text-uppercase">
                     <a
@@ -357,11 +364,7 @@ const Home = () => {
               <div className="col-lg-6">
                 <div className="about-img text-center ease-in-out duration-300 zoom-in-out-box">
                   <a href="social-media-marketing.html">
-                    <img
-                      src="assets/img/case_studies/gt-holidays/about-gt.webp"
-                      style={{ paddingTop: "30px" }}
-                      alt=""
-                    />
+                    <img src={Abtgt} style={{ paddingTop: "30px" }} alt="" />
                   </a>
                 </div>
               </div>
@@ -370,11 +373,7 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div className="about-img text-center ease-in-out duration-300 zoom-in-out-box">
-                  <img
-                    src="assets/img/home/video.png"
-                    style={{ paddingTop: "130px" }}
-                    alt=""
-                  />
+                  <img src={Vid} style={{ paddingTop: "130px" }} alt="" />
                 </div>
               </div>
               <div className="col-lg-6">
@@ -426,7 +425,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="#">Know More</a>
+                    <a href="/videoprod">Know More</a>
                   </div>
                   <div className="taeled-btn3 text-center position-relative text-uppercase">
                     <a
@@ -446,11 +445,11 @@ const Home = () => {
                 <div className="about-text-wrapper">
                   <div className="section-title title-border gradiant-border headline">
                     <div className="td-faq-body td-faq-body-sub-content color-grey">
-                      Make Your{" "}
+                      Make Your
                       <b style={{ fontWeight: 600 }}>
-                        brand <br /> credibility
-                      </b>{" "}
-                      among everyone
+                        &nbsp; brand <br /> credibility
+                      </b>
+                      &nbsp;among everyone
                     </div>
 
                     <div className="font-bold">
@@ -495,7 +494,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="#">Know More</a>
+                    <a href="/websitedev">Know More</a>
                   </div>
                   <div className="taeled-btn3 text-center position-relative text-uppercase">
                     <a
@@ -510,11 +509,7 @@ const Home = () => {
               </div>
               <div className="col-lg-6">
                 <div className="about-img text-center ease-in-out duration-300 zoom-in-out-box">
-                  <img
-                    src="assets/img/home/web.webp"
-                    style={{ paddingTop: "100px" }}
-                    alt=""
-                  />
+                  <img src={Web} style={{ paddingTop: "100px" }} alt="" />
                 </div>
               </div>
             </div>
@@ -523,7 +518,7 @@ const Home = () => {
               <div className="col-lg-7">
                 <div className="about-img text-center ease-in-out duration-300 zoom-in-out-box">
                   <img
-                    src="assets/img/home/seo.webp"
+                    src={Seo}
                     style={{ paddingTop: "106px", paddingRight: "90px" }}
                     alt=""
                   />
@@ -575,7 +570,7 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="#">Know More</a>
+                    <a href="/searchengine">Know More</a>
                   </div>
                   <div className="taeled-btn3 text-center position-relative text-uppercase">
                     <a
@@ -592,6 +587,59 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* ---------------------------------------------------Team service----------------------------------------- */}
+
+      <section id="team-service" className="team-service-section bg-light1">
+        <div className="container">
+          <div className="team-service-wrapper">
+            <div className="row">
+              <div className="col-lg-12 col-md-6">
+                <div className="td-faq-body td-faq-body-sub-content text-center">
+                  <b
+                    style={{
+                      fontWeight: 600,
+                      color: "#000000",
+                      fontSize: "45px",
+                      lineHeight: "65px",
+                    }}
+                  >
+                    "Together, we are committed to excellence,
+                    <br /> innovation, and making a meaningful
+                    <br /> impact in the digital world"
+                  </b>
+                  <br />
+                  <br />
+                  <h3 style={{ color: "#000000", fontWeight: 600 }}>
+                    <i>#BEUNIQUE</i>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* --------------------------------------------------------Testimonial----------------------------------------- */}
+
+      <Testimonial/>
+
+
+
+      {/* ----------------------------------------------lets work ---------------------------------------------- */}
+
+      <section id="team-page-area" class="team-page-section padding-tb-140">
+			<div class="section-title text-center headline ">
+				
+				<div class="td-faq-body td-faq-body-sub-content font-large padding-tb-90">
+					<b>Let's Work Together</b>
+				</div>
+				<br/>
+				<h3 className="mail-id"><a href="mailto:hi@artic9.com" target="_blank">hi@artic9.com</a></h3>
+			</div>
+
+		</section>
     </>
   );
 };
