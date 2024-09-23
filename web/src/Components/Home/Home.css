@@ -66,8 +66,7 @@
   width: 95%;
   font-size: 70px;
   color: #fff;
-  /* text-transform: uppercase; */
-  /* letter-spacing: 2px */
+  font-family: "Bebas Neue", sans-serif;
 }
 .spn {
   color: #fff;
