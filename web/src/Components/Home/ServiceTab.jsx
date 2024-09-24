@@ -80,9 +80,11 @@ const ServiceTab = () => {
               <div className="service-tab-wrapper">
                 <div className="section-title headline">
                   <div className="td-faq-body td-faq-body-sub-content">
-                    <b style={{ fontWeight: 600 , marginBottom:40}}>The Reason</b>
+                    <b style={{ fontWeight: 600, marginBottom: 40 }}>
+                      The Reason
+                    </b>
                     <br />
-                    <p style={{  marginTop:20}}>  Why Should Choose Us</p>
+                    <p style={{ marginTop: 20 }}> Why Should Choose Us</p>
                   </div>
                 </div>
                 <div className="service-tab-area">
@@ -101,7 +103,11 @@ const ServiceTab = () => {
                           }`}
                           style={{ cursor: "pointer", marginBottom: "10px" }}
                         >
-                          <span style={{ fontWeight: 700,fontSize:20,marginRight:50 }}
+                          <span
+                            style={{
+                              fontWeight: 700,
+                              fontSize: 20,
+                            }}
                           >
                             {section.title}
                           </span>
@@ -117,7 +123,13 @@ const ServiceTab = () => {
                           <div key={section.id} className="td-faq-body-content">
                             <ul>
                               {section.content.map((item, index) => (
-                                <li key={index} style={{ cursor: "pointer", marginBottom: "20px" }} >
+                                <li
+                                  key={index}
+                                  style={{
+                                    cursor: "pointer",
+                                    marginBottom: "20px",
+                                  }}
+                                >
                                   <b>{item.bold}</b> {item.text}
                                 </li>
                               ))}

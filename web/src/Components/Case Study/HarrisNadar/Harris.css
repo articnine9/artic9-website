@@ -1,0 +1,123 @@
+.harris-banner{
+    background-image: url(./../../../Assets/case_studies/harris_nadar/banner.png);
+    background-repeat: no-repeat;
+}
+
+.taeled-bredcrumb-section .background_overlay {
+    z-index: -1;
+    opacity: 0.902;
+}
+.background_overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.sec{
+    margin-top: 200px;
+}
+
+.gap{
+    display: flex;
+    gap: 20px;
+}
+
+
+/*Portfolio Details Page*/
+/*---------------*/
+.portfolio-details-section {
+    padding: 0px 0px;
+  }
+  .portfolio-details-section .portfolio-details-overview {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 50px 50px 45px;
+    border: 2px solid #e8eef5;
+  }
+  .portfolio-details-section .portfolio-details-overview .portfolio-overview-filter {
+    float: left;
+  }
+  .portfolio-details-section .portfolio-details-overview .portfolio-overview-filter li {
+    margin-right: 60px;
+  }
+  .portfolio-details-section .portfolio-details-overview .portfolio-overview-filter h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .portfolio-details-section .portfolio-details-overview .portfolio-overview-filter span {
+    font-weight: 600;
+  }
+  .portfolio-details-section .portfolio-details-overview .taeled-btn {
+    float: right;
+    border: 2px solid #e8eef5;
+    background-color: transparent;
+  }
+  .portfolio-details-section .portfolio-details-overview .taeled-btn i {
+    background-color: #ff4a17;
+  }
+  .portfolio-details-section .portfolio-details-text article {
+    margin: 15px 0px;
+  }
+  .portfolio-details-section .portfolio-details-img,
+  .portfolio-details-section .portfolio-details-video {
+    padding: 15px 0px;
+  }
+  .portfolio-details-section .portfolio-details-video-play {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    background-color: #fff;
+  }
+  .portfolio-details-section .portfolio-details-video-play i {
+    color: #ff4a17;
+  }
+  .portfolio-details-section .portfolio-next-prev-post {
+    padding: 60px;
+    background-color: #28d000;
+  }
+  .portfolio-details-section .portfolio-next-prev-post .portfolio-np-img {
+    height: 80px;
+    width: 130px;
+    margin-right: 20px;
+  }
+  .portfolio-details-section .portfolio-next-prev-post .portfolio-np-text {
+    font-weight: 700;
+    padding-top: 10px;
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+  }
+  .portfolio-details-section .portfolio-next-prev-post .portfolio-np-text span {
+    font-size: 14px;
+    color: #3f3e3d;
+  }
+  .portfolio-details-section .portfolio-next-prev-post .portfolio-np-text h3 {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+  .portfolio-details-section .portfolio-details-post-area {
+    padding-top: 0px;
+    margin: 0px 15px;
+  }
+  .portfolio-details-section .portfolio-details-post-area .col-md-6:nth-child(2) .portfolio-next-prev-post {
+    background-color: #4b0c09;
+  }
+  .portfolio-details-section .portfolio-details-post-area .col-md-6:nth-child(2) .portfolio-next-prev-post .portfolio-np-img {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .portfolio-details-section .portfolio-details-post-area .col-md-6:nth-child(2) .portfolio-next-prev-post .portfolio-np-text span {
+    color: #ffffff;
+  }
+  .portfolio-details-section .portfolio-details-post-area .col-md-6:nth-child(2) .portfolio-next-prev-post .portfolio-np-text h3 {
+    color: #ffffff;
+  }
+  .portfolio-np-text span,h3{
+    text-decoration: none !important;
+  }
+  .portfolio-np-text a{
+    text-decoration: none !important;
+  }

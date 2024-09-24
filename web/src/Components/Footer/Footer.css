@@ -14,6 +14,7 @@
 .footer-link{
     color: white !important;
     text-decoration: none !important;
+    font-size: 14px;
 }
 .footer-link:hover{
     color: gold !important;

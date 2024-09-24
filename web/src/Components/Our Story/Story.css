@@ -1,4 +1,4 @@
-.taeled-bredcrumb-section {
+.our-banner {
   z-index: 1;
   background-image: url(../../Assets/banner1.png);
   background-repeat: no-repeat;
@@ -9,7 +9,6 @@
 .taeled-bredcrumb-section .background_overlay {
   z-index: -1;
   opacity: 0.902;
-  /* background-color: #000; */
 }
 .taeled-bredcrumb-section .bredcrumb-title h2 {
   color: #000;

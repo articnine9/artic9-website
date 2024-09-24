@@ -13,7 +13,7 @@ const Story = () => {
 
       <section
         id="taeled-bredcrumb"
-        className="taeled-bredcrumb-section position-relative"
+        className="taeled-bredcrumb-section position-relative our-banner"
       >
         <div
           className="slider-deco1 position-absolute"

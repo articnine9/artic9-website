@@ -25,7 +25,7 @@ const Approutes = () => {
   return (
     <>
       <Router>
-        <Header />
+        <Header /> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gtholiday" element={<Gtholiday />} />
