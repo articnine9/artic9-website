@@ -18,6 +18,7 @@ import Testimonial from "./Testimonial";
 import Slider from "./Slider";
 import AnotherSlider from "./AnotherSlider";
 import ServiceTab from "./ServiceTab";
+import Scrollup from "../Preloader/Scrollup";
 
 const Home = () => {
   const services = [
@@ -28,11 +29,13 @@ const Home = () => {
   ];
   return (
     <>
+      <Scrollup />
       <Slider />
 
       <div className="sec-carousel">
         <AnotherSlider />
       </div>
+
       {/* ---------------------------------------About ------------------------------------------------------- */}
       <section id="about-4" className="about-section-4">
         <div className="container">
@@ -96,6 +99,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       {/* ----------------------------------service sec--------------------------------------------------------- */}
       <section id="team-service" className="team-service-section">
         <div className="container">
@@ -135,8 +139,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       {/* --------------------------------service tab------------------------------------------------ */}
       <ServiceTab />
+
       {/* ----------------------------------------blog------------------------------------------ */}
       <section id="blog" class="blog-section-1">
         <div class="container">
@@ -160,7 +166,7 @@ const Home = () => {
                       <div class="carousel-inner ">
                         <div class="carousel-item active">
                           <div class="blog-img-wrap img-border">
-                            <a href="#">
+                            <a href="/">
                               <img src={Img} alt="img" />
                             </a>
                           </div>
@@ -170,12 +176,12 @@ const Home = () => {
 
                     <div class="blog-text-wrap headline">
                       <div class="blog-post-meta">
-                        <a href="#" className="blog-mini-title">
+                        <a href="/" className="blog-mini-title">
                           business
                         </a>
                       </div>
                       <h3>
-                        <a href="#" className="blog-cnt">
+                        <a href="/" className="blog-cnt">
                           Be the brand that stands out. Meet our creative
                         </a>
                       </h3>
@@ -189,7 +195,7 @@ const Home = () => {
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <div class="blog-img-wrap img-border">
-                            <a href="#">
+                            <a href="/">
                               <img src={Harris} alt="img" />
                             </a>
                           </div>
@@ -204,7 +210,7 @@ const Home = () => {
                 <div class="blog-feed-wrap">
                   <div class="blog-img-text">
                     <div class="blog-img-wrap img-border">
-                      <a href="#">
+                      <a href="/">
                         <img src={Snowch} alt="img" />
                       </a>
                     </div>
@@ -217,12 +223,12 @@ const Home = () => {
                         <div class="carousel-item active">
                           <div class="blog-text-wrap headline">
                             <div class="blog-post-meta">
-                              <a href="#" className="blog-mini-title">
+                              <a href="/" className="blog-mini-title">
                                 sss
                               </a>
                             </div>
                             <h3>
-                              <a href="#" className="blog-cnt">
+                              <a href="/" className="blog-cnt">
                                 Be the brand that stands out. Meet our creative
                               </a>
                             </h3>
@@ -232,7 +238,7 @@ const Home = () => {
                     </div>
 
                     <div class="blog-img-wrap img-border">
-                      <a href="#">
+                      <a href="/">
                         <img src={Ab} alt="img" />
                       </a>
                     </div>
@@ -250,7 +256,7 @@ const Home = () => {
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <div class="blog-img-wrap img-border">
-                            <a href="#">
+                            <a href="/">
                               <img src={Bfour} alt="img" />
                             </a>
                           </div>
@@ -267,12 +273,12 @@ const Home = () => {
                         <div class="carousel-item active">
                           <div class="blog-text-wrap headline">
                             <div class="blog-post-meta">
-                              <a href="#" className="blog-mini-title">
+                              <a href="/" className="blog-mini-title">
                                 business
                               </a>
                             </div>
                             <h3>
-                              <a href="#" className="blog-cnt">
+                              <a href="/" className="blog-cnt">
                                 Be the brand that stands out. Meet our creative
                               </a>
                             </h3>
@@ -292,7 +298,6 @@ const Home = () => {
       <Client />
 
       {/* -----------------------------------Main-Service---------------------------------------------- */}
-
       <section id="about-4" className="service-4">
         <div className="container">
           <div className="about-content-wrapper-4">
@@ -346,17 +351,19 @@ const Home = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="/socialmedia">Know More</a>
-                  </div>
-                  <div className="taeled-btn3 text-center position-relative text-uppercase">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Call Us
-                    </a>
+                  <div className="btns-div">
+                    <div className="taeled-btn text-center position-relative text-uppercase">
+                      <a href="/socialmedia">Know More</a>
+                    </div>
+                    <div className="taeled-btn3 text-center position-relative text-uppercase ">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Call Us
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -424,17 +431,19 @@ const Home = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="/videoprod">Know More</a>
-                  </div>
-                  <div className="taeled-btn3 text-center position-relative text-uppercase">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Call Us
-                    </a>
+                  <div className="btns-div">
+                    <div className="taeled-btn text-center position-relative text-uppercase">
+                      <a href="/socialmedia">Know More</a>
+                    </div>
+                    <div className="taeled-btn3 text-center position-relative text-uppercase ">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Call Us
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -493,17 +502,19 @@ const Home = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="/websitedev">Know More</a>
-                  </div>
-                  <div className="taeled-btn3 text-center position-relative text-uppercase">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Call Us
-                    </a>
+                  <div className="btns-div">
+                    <div className="taeled-btn text-center position-relative text-uppercase">
+                      <a href="/socialmedia">Know More</a>
+                    </div>
+                    <div className="taeled-btn3 text-center position-relative text-uppercase ">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Call Us
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -569,17 +580,19 @@ const Home = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="/searchengine">Know More</a>
-                  </div>
-                  <div className="taeled-btn3 text-center position-relative text-uppercase">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Call Us
-                    </a>
+                  <div className="btns-div">
+                    <div className="taeled-btn text-center position-relative text-uppercase">
+                      <a href="/socialmedia">Know More</a>
+                    </div>
+                    <div className="taeled-btn3 text-center position-relative text-uppercase ">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=+919500309310&text=Hello!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Call Us
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -589,7 +602,6 @@ const Home = () => {
       </section>
 
       {/* ---------------------------------------------------Team service----------------------------------------- */}
-
       <section id="team-service" className="team-service-section bg-light1">
         <div className="container">
           <div className="team-service-wrapper">
@@ -610,7 +622,9 @@ const Home = () => {
                   </b>
                   <br />
                   <br />
-                  <h3 style={{ color: "#000000", fontWeight: 600 }}>
+                  <h3
+                    style={{ color: "#000000", fontWeight: 600, fontSize: 50 }}
+                  >
                     <i>#BEUNIQUE</i>
                   </h3>
                 </div>
@@ -620,26 +634,27 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* --------------------------------------------------------Testimonial----------------------------------------- */}
-
-      <Testimonial/>
-
-
+      <Testimonial />
 
       {/* ----------------------------------------------lets work ---------------------------------------------- */}
-
       <section id="team-page-area" class="team-page-section padding-tb-140">
-			<div class="section-title text-center headline ">
-				
-				<div class="td-faq-body td-faq-body-sub-content font-large padding-tb-90">
-					<b>Let's Work Together</b>
-				</div>
-				<br/>
-				<h3 className="mail-id"><a href="mailto:hi@artic9.com" target="_blank">hi@artic9.com</a></h3>
-			</div>
-
-		</section>
+        <div class="section-title text-center headline ">
+          <div class="td-faq-body td-faq-body-sub-content font-large padding-tb-90">
+            <b>Let's Work Together</b>
+          </div>
+          <br />
+          <h3 className="mail-id">
+            <a
+              href="mailto:hi@artic9.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              hi@artic9.com
+            </a>
+          </h3>
+        </div>
+      </section>
     </>
   );
 };

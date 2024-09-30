@@ -1,0 +1,59 @@
+.tino-banner {
+  margin-top: 100px;
+}
+.fullscreen-tino {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-about-section {
+  margin-top: 80px;
+}
+
+.blog-section-2 {
+  background-color: #05297e;
+}
+.service-page-blog {
+  padding: 100px 0px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tino-banner {
+    width: 100%;
+    margin-top: 50px !important;
+  }
+
+  .fullscreen-tino {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .tino-banner {
+    width: 90%;
+    margin-top: 30px !important;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .fullscreen-tino {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 55px;
+    margin-left: 25px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}

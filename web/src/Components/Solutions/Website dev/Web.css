@@ -1,0 +1,241 @@
+.web-head {
+  font-size: 30px;
+}
+
+.about-text-details {
+  font-size: 14px !important;
+}
+
+.about-text-details1 {
+  padding-bottom: 30px;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+}
+
+.td-faq-body-sub-content {
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 43px;
+}
+.web-details {
+  padding-bottom: 0px !important;
+}
+
+.title-font {
+  font-size: 19px !important;
+}
+
+.section-padding {
+  padding-top: 80px;
+}
+
+.gallery-section {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 700;
+  color: #f44336;
+}
+
+.filter {
+  text-align: center;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px 4px 4px 0;
+  display: inline-block;
+  background: #ffc107;
+  color: #000;
+  transition: all 0.4s;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn:hover,
+.btn-active {
+  background: #007bff;
+  color: #fff;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  max-width: 1320px;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  border: 1px solid black;
+}
+
+.gallery a {
+  display: flex;
+}
+
+.gallery img {
+  width: 199px;
+  height: 45px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 20px 38px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+.btn-active {
+  background-color: #007bff;
+  color: white;
+}
+
+.testimonial-inner-wrapper:hover {
+  -webkit-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  transform: translateY(15px);
+  background-color: black;
+  color: white;
+}
+
+.testimonial-inner-wrapper {
+  z-index: 1;
+  background-color: #fff;
+  padding: 55px 50px 55px 50px;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.cntr-head {
+  font-size: 60px !important;
+}
+
+.web1-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.intro-video-wrap {
+  padding-top: 150px;
+  padding-left: 40px;
+}
+.taeled-btn-black2 {
+  z-index: 1;
+  height: 47px;
+  width: 150px;
+  left: 0px;
+  top: 0px;
+  font-weight: 600;
+  line-height: 46px;
+  padding-right: 0px;
+  border-radius: 35px;
+  position: relative;
+  font-family: "poppins", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.taeled-btn-black2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.title-padding {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.td-faq-body-sub-content {
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 43px;
+}
+.responsive-title {
+  font-weight: 600;
+  font-size: 60px;
+}
+.responsive-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+}
+.web-btn {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .font-normal b {
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 110px;
+  }
+  */
+  .testimonial-section-3 .testimonial-content-wrapper-3 {
+    padding: 0%;
+  }
+  .web1-padding {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+}
+@media only screen and (min-width: 0px) {
+  .title-padding {
+    padding-top: 200px;
+    padding-bottom: 00px;
+}
+  .web1-padding {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+.intro-video-wrap {
+  padding-top: 0px;
+  padding-left: 40px;
+}
+}
+@media (max-width: 375px) {
+  .responsive-title {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .responsive-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .responsive-btn,
+  .responsive-btn-black {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .responsive-title {
+    font-size: 30px;
+  }
+  .responsive-subtitle {
+    font-size: 12px;
+  }
+  .responsive-btn,
+  .responsive-btn-black {
+    font-size: 10px;
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  hr {
+    margin-top: 100px !important;
+  }
+}

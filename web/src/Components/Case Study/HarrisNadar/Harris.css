@@ -1,6 +1,8 @@
 .harris-banner{
     background-image: url(./../../../Assets/case_studies/harris_nadar/banner.png);
     background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .taeled-bredcrumb-section .background_overlay {

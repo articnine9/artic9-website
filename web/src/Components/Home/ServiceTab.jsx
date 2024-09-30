@@ -89,7 +89,7 @@ const ServiceTab = () => {
                 </div>
                 <div className="service-tab-area">
                   <div className="service-tab-btn state_tab clearfix ul-li">
-                    <ul className="nav text-center">
+                    <ul className="nav text-center reason-title">
                       {sections.map((section) => (
                         <li
                           key={section.id}
@@ -103,12 +103,7 @@ const ServiceTab = () => {
                           }`}
                           style={{ cursor: "pointer", marginBottom: "10px" }}
                         >
-                          <span
-                            style={{
-                              fontWeight: 700,
-                              fontSize: 20,
-                            }}
-                          >
+                          <span className="sec-title">
                             {section.title}
                           </span>
                         </li>

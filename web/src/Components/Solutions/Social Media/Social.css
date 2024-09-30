@@ -1,0 +1,81 @@
+.about-section-4-whitebg {
+  margin-bottom: 20px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcd00;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #fff;
+
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #f27121, #e94057, #8a2387);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+h3 {
+  margin-bottom: 0.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}

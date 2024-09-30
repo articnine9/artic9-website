@@ -2,6 +2,7 @@
   z-index: 1;
   background-image: url(../../Assets/banner1.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .taeled-bredcrumb-section .bredcrumb-content {
   padding: 220px 0px 200px;
@@ -141,14 +142,18 @@ img {
   border: 2px solid #fff;
 }
 
-
-.td-faq-body-content u{
-    color: #000;
+.td-faq-body-content u {
+  color: #000;
 }
 
-.about-text-details{
-    width: 600px;
+.about-text-details {
+  width: 600px;
 }
-.section-title{
-    margin-bottom: 20px;
+.section-title {
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .story-img {
+    display: none;
+  }
 }

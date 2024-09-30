@@ -36,7 +36,7 @@ const ServiceTab = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="service-details-img">
+                <div className="service-details-img ">
                   <img src={Img1} alt="What we do" />
                 </div>
               </div>
@@ -50,7 +50,7 @@ const ServiceTab = () => {
           <div className="service-tab-content">
             <div className="row">
               <div className="col-lg-6">
-                <div className="service-details-img">
+                <div className="service-details-img story-img">
                   <img src={Img2} alt="Client Approach" />
                 </div>
               </div>
@@ -133,7 +133,7 @@ const ServiceTab = () => {
           <div className="service-tab-content">
             <div className="row">
               <div className="col-lg-6">
-                <div className="service-details-img">
+                <div className="service-details-img story-img">
                   <img src={Img4} alt="How we start" />
                 </div>
               </div>
@@ -168,14 +168,14 @@ const ServiceTab = () => {
                       id="value"
                       className="tab-pane fade active show td-faq-body-content"
                     >
-                      Just drop an email to{" "}
+                      Just drop an email to
                       <a
                         href="mailto:hi@artic9.com"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <u>hi@artic9.com</u>
-                      </a>{" "}
+                      </a>
                       and we’ll figure out the best way to get started!
                     </div>
                   </div>

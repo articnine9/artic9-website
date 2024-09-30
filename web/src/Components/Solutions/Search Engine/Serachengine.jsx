@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import "./Search.css";
 
 const Serachengine = () => {
   return (
-    <div>
+    <>
       
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Serachengine
+export default Serachengine;

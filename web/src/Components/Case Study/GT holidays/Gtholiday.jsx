@@ -3,17 +3,17 @@ import "./Gt.css";
 
 import Gtbanner from "../../../Assets/case_studies/gt-holidays/gt-banner.jpg";
 import Abtgt from "../../../Assets/case_studies/gt-holidays/about-gt.webp";
-import Id1 from '../../../Assets/case_studies/gt-holidays/identity-img.webp'
-import Id2 from '../../../Assets/case_studies/gt-holidays/identity-img2.webp'
-import Insta1 from '../../../Assets/case_studies/gt-holidays/instagram01.webp'
-import Insta2 from '../../../Assets/case_studies/gt-holidays/instagram02.webp'
-import Insta3 from '../../../Assets/case_studies/gt-holidays/instagram03.webp'
+import Id1 from "../../../Assets/case_studies/gt-holidays/identity-img.webp";
+import Id2 from "../../../Assets/case_studies/gt-holidays/identity-img2.webp";
+import Insta1 from "../../../Assets/case_studies/gt-holidays/instagram01.webp";
+import Insta2 from "../../../Assets/case_studies/gt-holidays/instagram02.webp";
+import Insta3 from "../../../Assets/case_studies/gt-holidays/instagram03.webp";
 import nxt from "../../../Assets/nxt.png";
 import prev from "../../../Assets/prev.png";
 import CounterSection from "./Countersection";
 const Gtholiday = () => {
   return (
-    <>
+    <div className="gt">
       <div className="gt-banner">
         <img
           class="fullscreen border-img-curve"
@@ -22,14 +22,11 @@ const Gtholiday = () => {
         />
       </div>
 
-      <section
-        id="feature-video"
-        className="feature-video-section position-relative"
-      >
+      <section className="feature-video-section position-relative">
         <div className="container">
           <div className="row">
             {/* Video 1 */}
-            <div className="col-lg-4">
+            <div className="col-lg-4  col-sm-6 vid">
               <div className="feature-video-img-text position-relative">
                 <div className="feature-video-img">
                   <iframe
@@ -47,7 +44,7 @@ const Gtholiday = () => {
             </div>
 
             {/* Video 2 */}
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-sm-6 vid">
               <div className="feature-video-img-text position-relative">
                 <div className="feature-video-img">
                   <iframe
@@ -65,7 +62,7 @@ const Gtholiday = () => {
             </div>
 
             {/* Video 3 */}
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-sm-12 vid  ">
               <div className="feature-video-img-text position-relative">
                 <div className="feature-video-img">
                   <iframe
@@ -141,7 +138,7 @@ const Gtholiday = () => {
           <div className="team-content-wrapper-2 clearfix">
             <div className="team-member-content-2">
               <div className="row">
-                <div className="col-lg-6 col-md-6">
+                <div className="col-lg-6 mb-5">
                   <div className="team-member-innerbox">
                     <div className="team-member-img position-relative">
                       <img
@@ -152,7 +149,7 @@ const Gtholiday = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-6">
+                <div className="col-lg-6 ">
                   <div className="team-member-innerbox">
                     <div className="team-member-img position-relative">
                       <img
@@ -223,7 +220,7 @@ const Gtholiday = () => {
             <div className="team-content-wrapper-2 clearfix">
               <div className="team-member-content-2">
                 <div className="row">
-                  <div className="col-lg-4 col-md-6">
+                  <div className="col-lg-4 col-sm-12">
                     <div className="team-member-innerbox">
                       <div className="team-member-img position-relative">
                         <img
@@ -234,7 +231,7 @@ const Gtholiday = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6">
+                  <div className="col-lg-4 col-sm-12">
                     <div className="team-member-innerbox">
                       <div className="team-member-img position-relative">
                         <img
@@ -245,7 +242,7 @@ const Gtholiday = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6">
+                  <div className="col-lg-4  col-sm-12">
                     <div className="team-member-innerbox">
                       <div className="team-member-img position-relative">
                         <img
@@ -263,7 +260,7 @@ const Gtholiday = () => {
         </div>
       </section>
 
-      <CounterSection/>
+      <CounterSection />
 
       <section id="portfolio-details" className="portfolio-details-section">
         <div className="portfolio-details-content">
@@ -300,7 +297,7 @@ const Gtholiday = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -4,8 +4,7 @@ import "aos/dist/aos.css";
 import "./Home.css";
 import gtmain from "../../Assets/s11.png";
 import gtlogo from "../../Assets/gt-logo.png";
-import Snowmain from "../../Assets/b2.png";
-import Snowlogo from "../../Assets/clients-logo/snowch-logo.png";
+
 const Slider = () => {
   const slides = [
     {
@@ -18,8 +17,8 @@ const Slider = () => {
       cnt5: "Learn More",
     },
     {
-      image: Snowmain,
-      logo: Snowlogo,
+      image: gtmain,
+      logo: gtlogo,
       cnt1: "Branding",
       cnt2: "UI & UX Designs",
       cnt3: "Product Development",
@@ -47,8 +46,8 @@ const Slider = () => {
   }, [slides.length]);
 
   return (
-    <div className="slider-container">
-      <div className={`slides ${fade ? "fade-out" : "fade-in"}`}>
+    <div className="slider-container row">
+      <div className={`slides ${fade ? "fade-out" : "fade-in"} col-lg-12`}>
         {/* Image Section */}
         <div className="slider-image" data-aos="fade-right">
           <img
@@ -68,10 +67,10 @@ const Slider = () => {
           <br /> <br />
           <div>
             <span className="spn">
-              {slides[currentSlide].cnt1} <b>|</b>{" "}
+              {slides[currentSlide].cnt1} <b>|</b>
             </span>
             <span className="spn">
-              {slides[currentSlide].cnt2} <b>|</b>{" "}
+              {slides[currentSlide].cnt2} <b>|</b>
             </span>
             <span className="spn">{slides[currentSlide].cnt3}</span>
           </div>

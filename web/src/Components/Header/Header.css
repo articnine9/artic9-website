@@ -1,4 +1,4 @@
-.custom-navbar {
+  .custom-navbar {
   background-color: #fff;
   padding: 0.5rem 0;
   position: fixed;
@@ -27,10 +27,9 @@
 }
 
 .nav-item.dropdown .nav-link::after {
-  display: none; /* Remove dropdown symbol */
+  display: none; 
 }
 
-/* button */
 .button-with-icon {
   overflow: hidden;
   display: inline-flex;
@@ -95,12 +94,22 @@
   width: 15%;
 }
 
-
 .nav-item.dropdown:hover .dropdown-menu {
-  display: block; 
+  display: block;
 }
 
 .dropdown-menu {
-  display: none; 
-  position: absolute; 
+  display: none;
+  position: absolute;
+}
+
+.navs .nav-item {
+  margin:  10px !important;
+}
+.navs .nav-link {
+  font-size: 20px !important;
+}
+.nav-link,
+.dropdown-item {
+  color: #000 !important;
 }

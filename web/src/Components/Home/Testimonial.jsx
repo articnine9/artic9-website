@@ -60,7 +60,7 @@ const Testimonial = () => {
             </div>
             <div className="testimonial-btn-2">
               <a
-                className="testimonial-slider-btn2 carousel-control-prev"
+                className="testimonial-slider-btn2 carousel-control-prev mx-3"
                 href="#carouselExampleIndicators"
                 role="button"
                 data-slide="prev"
@@ -68,7 +68,7 @@ const Testimonial = () => {
                 Prev
               </a>
               <a
-                className="testimonial-slider-btn2 carousel-control-next"
+                className="testimonial-slider-btn2 carousel-control-next mx-3"
                 href="#carouselExampleIndicators"
                 role="button"
                 data-slide="next"

@@ -1,9 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom"; 
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../Assets/logo1.png";
-import "./Header.css"; 
+import "./Header.css";
 
 const Header = () => {
+  const nav = useNavigate();
+  const [dropdownOpen, setDropdownOpen] = useState({
+    caseStudy: false,
+    solutions: false,
+    sectors: false,
+  });
+
+  const handlecontact = () => {
+    nav("/contact");
+  };
+
+  const handleMouseEnter = (dropdown) => {
+    setDropdownOpen((prev) => ({ ...prev, [dropdown]: true }));
+  };
+
+  const handleMouseLeave = (dropdown) => {
+    setDropdownOpen((prev) => ({ ...prev, [dropdown]: false }));
+  };
+
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container-fluid d-flex justify-content-center align-items-center">
@@ -22,127 +41,195 @@ const Header = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <div className="collapse navbar-collapse navs" id="navbarNavDropdown">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/story" aria-current="page">
                 Our Story
               </Link>
             </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                aria-expanded="false"
-                aria-current="page"
-              >
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => handleMouseEnter('caseStudy')}
+              onMouseLeave={() => handleMouseLeave('caseStudy')}
+            >
+              <Link className="nav-link dropdown-toggle" to="#" role="button">
                 Case study
               </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/gtholiday">GT Holidays</Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/harrisnadar">Harris Nadar Jewellery</Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/tino">Tino Engineering</Link>
-                </li>
-              </ul>
+              {dropdownOpen.caseStudy && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/gtholiday"
+                      onClick={handlecontact}
+                    >
+                      GT Holidays
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/harrisnadar"
+                      onClick={handlecontact}
+                    >
+                      Harris Nadar Jewellery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/tino"
+                      onClick={handlecontact}
+                    >
+                      Tino Engineering
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-current="page"
-              >
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => handleMouseEnter('solutions')}
+              onMouseLeave={() => handleMouseLeave('solutions')}
+            >
+              <Link className="nav-link dropdown-toggle" to="#" role="button">
                 Solutions
               </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/searchengine">
-                    Search Engine Optimization
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/socialmedia">
-                    Social Media Marketing
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/videoprod">
-                    Video Production
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/websitedev">
-                    Website Development
-                  </Link>
-                </li>
-              </ul>
+              {dropdownOpen.solutions && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/searchengine"
+                      onClick={handlecontact}
+                    >
+                      Search Engine Optimization
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/socialmedia"
+                      onClick={handlecontact}
+                    >
+                      Social Media Marketing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/videoprod"
+                      onClick={handlecontact}
+                    >
+                      Video Production
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/websitedev"
+                      onClick={handlecontact}
+                    >
+                      Website Development
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                aria-current="page"
-              >
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => handleMouseEnter('sectors')}
+              onMouseLeave={() => handleMouseLeave('sectors')}
+            >
+              <Link className="nav-link dropdown-toggle" to="#" role="button">
                 Sectors
               </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/business">
-                    Business Strategy
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/design">
-                    Design
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/engineering">
-                    Engineering & Technology
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/facilities">
-                    Facilities
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/finance">
-                    Finance
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/legal">
-                    Legal
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/marketing">
-                    Marketing & Communications
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/people">
-                    People
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/sales">
-                    Sales, Service & Support
-                  </Link>
-                </li>
-              </ul>
+              {dropdownOpen.sectors && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/business"
+                      onClick={handlecontact}
+                    >
+                      Business Strategy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/design"
+                      onClick={handlecontact}
+                    >
+                      Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/engineering"
+                      onClick={handlecontact}
+                    >
+                      Engineering & Technology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/facilities"
+                      onClick={handlecontact}
+                    >
+                      Facilities
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/finance"
+                      onClick={handlecontact}
+                    >
+                      Finance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/legal"
+                      onClick={handlecontact}
+                    >
+                      Legal
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/marketing"
+                      onClick={handlecontact}
+                    >
+                      Marketing & Communications
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/people"
+                      onClick={handlecontact}
+                    >
+                      People
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/sales"
+                      onClick={handlecontact}
+                    >
+                      Sales, Service & Support
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact" aria-current="page">
@@ -150,7 +237,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <button className="button-with-icon">
+          <button className="button-with-icon" onClick={handlecontact}>
             <svg
               className="icon"
               id="Arrow"
