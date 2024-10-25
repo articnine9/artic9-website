@@ -10,7 +10,7 @@ import Ab from "../../Assets/anantha-bavan.png";
 import Seo from "../../Assets/seo.webp";
 import Vid from "../../Assets/video.webp";
 import Web from "../../Assets/web.webp";
-import Abtgt from "../../Assets/about-gt.webp";
+import Abtgt from "../../Assets/case_studies/gt-holidays/about-gt.webp";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Client from "./Client";
