@@ -145,7 +145,7 @@ const Gtholiday = () => {
                       <img
                         className="border-img-curve"
                         src={Id1}
-                        alt="Brand Identity Image 1"
+                        alt="Brand Identity 1"
                       />
                     </div>
                   </div>
@@ -156,7 +156,7 @@ const Gtholiday = () => {
                       <img
                         className="border-img-curve"
                         src={Id2}
-                        alt="Brand Identity Image 2"
+                        alt="Brand Identity 2"
                       />
                     </div>
                   </div>
@@ -227,7 +227,7 @@ const Gtholiday = () => {
                         <img
                           className="border-img-curve"
                           src={Insta1}
-                          alt="Instagram Image 1"
+                          alt="Instagram 1"
                         />
                       </div>
                     </div>
@@ -238,7 +238,7 @@ const Gtholiday = () => {
                         <img
                           className="border-img-curve"
                           src={Insta2}
-                          alt="Instagram Image 2"
+                          alt="Instagram 2"
                         />
                       </div>
                     </div>
@@ -249,7 +249,7 @@ const Gtholiday = () => {
                         <img
                           className="border-img-curve"
                           src={Insta3}
-                          alt="Instagram Image 3"
+                          alt="Instagram 3"
                         />
                       </div>
                     </div>

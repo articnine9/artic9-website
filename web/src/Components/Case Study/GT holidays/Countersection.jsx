@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import './Gt.css'; // Import your CSS file here
 
 const CounterSection = () => {
-  const counters = [
+  const counters = useMemo(() => [
     { value: 65, label: 'Raised In 2020' },
     { value: 59, label: 'Time in gaming' },
     { value: 50, label: 'Country coverage' },
     { value: 25, label: 'Drink coffee' },
-  ];
+  ], []);
 
   const [animatedValues, setAnimatedValues] = useState(
     counters.map(counter => ({ ...counter, currentValue: 0 }))
@@ -45,7 +45,7 @@ const CounterSection = () => {
 
     // Cleanup function to clear intervals
     return () => intervals.forEach(clearInterval);
-  }, [counters]); // Include 'counters' here
+  }, [counters]); // Now 'counters' won't cause re-renders
 
   return (
     <section id="counter-2" className="counter-section-2">

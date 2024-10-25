@@ -86,7 +86,7 @@ const Harrisnadar = () => {
                 <div className="blog-feed-wrap">
                   <div className="blog-img-text">
                     <div className="blog-img-wrap">
-                      <img src={grid1} alt="Blog Image 1" />
+                      <img src={grid1} alt="Blog 1" />
                     </div>
                   </div>
                 </div>
