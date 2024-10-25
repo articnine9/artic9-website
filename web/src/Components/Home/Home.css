@@ -1427,19 +1427,7 @@ body {
   transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
 }
 
-/* @-webkit-keyframes spinner {
-   {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
 
-@keyframes spinner {
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-} */
 [data-background] {
   background-size: inherit;
   background-repeat: no-repeat;
@@ -1510,11 +1498,7 @@ select:visited {
   margin-bottom: 0;
 }
 
-/* .headline h1,
-.headline h2, {
-  margin : 0;
-  font-family: 'Bebas Neue', sans-serif;
-} */
+
 
 .headline h3,
 .headline h4,
@@ -1978,7 +1962,6 @@ select:visited {
   top: 100%;
   width: 100%;
   height: 560px;
-  /* background-image: url(../img/shape/waves-shape.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2621,14 +2604,6 @@ select:visited {
   );
 }
 
-/* .slider-style-one {
-  padding: 380px 0px 260px;
-  background-image: url(../img/case_studies/harris_nadar/banner01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-} */
-
 .slider-style-one .slider-img-wrap {
   top: -90px;
   /* right: 230px; */
@@ -3086,9 +3061,7 @@ select:visited {
 .about-right-img .about-bottom-img {
   top: 14px;
   right: 65px;
-  /* border: 10px solid #fff;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(102, 102, 102, 0.1);
-          box-shadow: 0px 8px 16px 0px rgba(102, 102, 102, 0.1); */
+
 }
 
 .about-mission-vission {
@@ -6663,11 +6636,7 @@ select:visited {
 .team-img-text-wrapper .team-member-img {
   margin-bottom: 22px;
 }
-/* .team-img-text-wrapper .team-member-img img {
-  border-radius: 100%;
-  width: 180px;
-  height: 180px;
-} */
+
 .team-img-text-wrapper .team-member-img .member-social-btn:before {
   top: -5px;
   right: 50px;
@@ -6882,9 +6851,7 @@ select:visited {
   -o-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
-/* .team-page-section .team-content-wrapper .team-img-text-wrapper:hover {
-  background-color: #121e2d;
-} */
+
 .team-page-section
   .team-content-wrapper
   .team-img-text-wrapper:hover
@@ -6941,7 +6908,6 @@ select:visited {
 .team-service-section .team-service-wrapper {
   margin-top: 40px;
   padding: 40px 20px 40px;
-  /* border: 1px solid #ffca00; */
 }
 .team-service-section .team-service-innerbox {
   z-index: 1;
@@ -7112,7 +7078,6 @@ select:visited {
 /*----------------------------------------------------*/
 .intro-video-section {
   z-index: 1;
-  /* padding: 120px 0px 150px; */
 }
 .intro-video-section .background_overlay {
   z-index: -1;
@@ -7357,7 +7322,6 @@ select:visited {
 .taeled-bredcrumb-section .background_overlay {
   z-index: -1;
   opacity: 0.902;
-  /* background-color: #000; */
 }
 .taeled-bredcrumb-section .bredcrumb-title h2 {
   color: #000;
@@ -7607,7 +7571,7 @@ select:visited {
 
 .price-filter-widget .fliter-range-bar {
   -webkit-appearance: none;
-  -moz-appearance: none; /* Older versions of Firefox */
+  -moz-appearance: none; 
   appearance: none;
   width: 100%;
   height: 2px;
@@ -7818,8 +7782,8 @@ select:visited {
   font-weight: 700;
   padding: 10px 35px 10px 10px;
   font-family: "poppins", sans-serif;
-  -webkit-appearance: none; /* Safari and older versions of Chrome */
-  -moz-appearance: none; /* Older versions of Firefox */
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
   appearance: none;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
@@ -8622,7 +8586,6 @@ select:visited {
 }
 .line_animation .line_area {
   width: 20%;
-  /* float: left; */
   height: 100%;
   position: relative;
   display: inline-block;
@@ -9918,7 +9881,6 @@ select:visited {
     top: -90px;
     left: -13px;
 
-    /* display: none; */
   }
 
   .testimonial-slider-textinner .testimonial-main-text {
@@ -10058,7 +10020,6 @@ select:visited {
   }
 
   .tst-author-nav .tst-author-text {
-    /* margin-top: 60px; */
     display: contents;
   }
 
@@ -10167,7 +10128,6 @@ select:visited {
   }
 
   .testimonial-slider-textinner .testimonial-main-text .tst-details-quot {
-    /* font-size: 20px; */
     font-size: 39px;
     line-height: 55px;
     padding-left: 50px;
