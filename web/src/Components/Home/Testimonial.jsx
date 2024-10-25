@@ -49,7 +49,7 @@ const Testimonial = () => {
                       <span>{testimonial.text}</span>
                       <div className="testimonial-author text-uppercase headline pera-content">
                         <h3>
-                          <a href="#">{testimonial.author}</a>
+                          {testimonial.author}
                         </h3>
                         <p>{testimonial.role}</p>
                       </div>

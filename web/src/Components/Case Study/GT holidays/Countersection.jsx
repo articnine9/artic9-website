@@ -22,7 +22,7 @@ const CounterSection = () => {
     const increments = counters.map(counter => ({
       value: counter.value,
       increment: counter.value / totalSteps,
-    }));
+    }),[counters]);
 
     const intervals = increments.map((counter, index) => {
       let currentValue = 0;
