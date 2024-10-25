@@ -28,6 +28,7 @@ import Wp from "../../../Assets/technologies-logo/wp-rocket.png";
 import Zoho from "../../../Assets/technologies-logo/zoho.png";
 
 import "./Web.css";
+
 const GallerySection = () => {
   const [filter, setFilter] = useState("all");
 
@@ -63,9 +64,11 @@ const GallerySection = () => {
     filter === "all"
       ? technologies
       : technologies.filter((tech) => tech.category === filter);
+  
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
   };
+
   return (
     <section style={{ backgroundColor: "#ffffff" }}>
       <div className="section-padding gallery-section" id="gallery">
@@ -106,9 +109,9 @@ const GallerySection = () => {
 
           <div className="gallery sets">
             {filteredTechnologies.map((tech, index) => (
-              <a key={index} className={`all ${tech.category}`}>
-                <img src={tech.src} alt="" />
-              </a>
+              <div key={index} className={`all ${tech.category}`} style={{ cursor: 'pointer' }}>
+                <img src={tech.src} alt="tools logo" />
+              </div>
             ))}
           </div>
         </div>

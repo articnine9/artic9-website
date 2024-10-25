@@ -9,9 +9,13 @@ const Scrollup = () => {
 
   return (
     <div className="up">
-      <a href="#" className="scrollup text-center" onClick={handleScrollToTop}>
+      <button
+        className="scrollup text-center"
+        onClick={handleScrollToTop}
+        aria-label="Scroll to top" // Optional for better accessibility
+      >
         <FaAnglesUp className="scrollup" />
-      </a>
+      </button>
     </div>
   );
 };

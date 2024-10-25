@@ -12,6 +12,7 @@ import grid2 from "../../../Assets/case_studies/harris_nadar/2.png";
 import grid3 from "../../../Assets/case_studies/harris_nadar/gird-3.png";
 import nxt from "../../../Assets/nxt.png";
 import prev from "../../../Assets/prev.png";
+
 const Harrisnadar = () => {
   return (
     <>
@@ -63,7 +64,7 @@ const Harrisnadar = () => {
             <div className="row">
               {[glry1, glry2, glry3, glry4, glry5, glry6].map((src, index) => (
                 <div className="col-lg-4" key={index}>
-                  <div className="service-about-img  position-relative ">
+                  <div className="service-about-img position-relative">
                     <img src={src} alt={`Case Study ${index + 1}`} />
                   </div>
                 </div>
@@ -95,11 +96,11 @@ const Harrisnadar = () => {
                 <div className="blog-feed-wrap">
                   <div className="blog-img-text">
                     <div className="blog-img-wrap">
-                      <img src={grid2} alt="Blog Image 2" />
+                      <img src={grid2} alt="Blog Visual 2" />
                     </div>
                     <br />
                     <div className="blog-img-wrap">
-                      <img src={grid3} alt="Blog Image 3" />
+                      <img src={grid3} alt="Blog Visual 3" />
                     </div>
                   </div>
                 </div>

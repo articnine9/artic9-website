@@ -88,7 +88,7 @@ const Socialmedia = () => {
                     destination and offers unique ideas for your travel.
                   </div>
                   <div className="taeled-btn text-center position-relative text-uppercase">
-                    <a href="#">Call Us</a>
+                    <a href="/contact">Call Us</a>
                   </div>
                 </div>
               </div>

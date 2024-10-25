@@ -11,14 +11,15 @@ import Insta3 from "../../../Assets/case_studies/gt-holidays/instagram03.webp";
 import nxt from "../../../Assets/nxt.png";
 import prev from "../../../Assets/prev.png";
 import CounterSection from "./Countersection";
+
 const Gtholiday = () => {
   return (
     <div className="gt">
       <div className="gt-banner">
         <img
-          class="fullscreen border-img-curve"
+          className="fullscreen border-img-curve"
           src={Gtbanner}
-          alt="gt-holidays-banner-image"
+          alt="GT Holidays banner"
         />
       </div>
 
@@ -26,7 +27,7 @@ const Gtholiday = () => {
         <div className="container">
           <div className="row">
             {/* Video 1 */}
-            <div className="col-lg-4  col-sm-6 vid">
+            <div className="col-lg-4 col-sm-6 vid">
               <div className="feature-video-img-text position-relative">
                 <div className="feature-video-img">
                   <iframe
@@ -62,7 +63,7 @@ const Gtholiday = () => {
             </div>
 
             {/* Video 3 */}
-            <div className="col-lg-4 col-sm-12 vid  ">
+            <div className="col-lg-4 col-sm-12 vid">
               <div className="feature-video-img-text position-relative">
                 <div className="feature-video-img">
                   <iframe
@@ -242,7 +243,7 @@ const Gtholiday = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-4  col-sm-12">
+                  <div className="col-lg-4 col-sm-12">
                     <div className="team-member-innerbox">
                       <div className="team-member-img position-relative">
                         <img

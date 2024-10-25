@@ -22,7 +22,7 @@ const CounterSection = () => {
     const increments = counters.map(counter => ({
       value: counter.value,
       increment: counter.value / totalSteps,
-    }),[counters]);
+    }));
 
     const intervals = increments.map((counter, index) => {
       let currentValue = 0;
@@ -45,7 +45,7 @@ const CounterSection = () => {
 
     // Cleanup function to clear intervals
     return () => intervals.forEach(clearInterval);
-  }, []); // Run once on mount
+  }, [counters]); // Include 'counters' here
 
   return (
     <section id="counter-2" className="counter-section-2">

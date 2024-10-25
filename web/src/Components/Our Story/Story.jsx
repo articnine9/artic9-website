@@ -63,7 +63,7 @@ const Story = () => {
                     </div>
 
                     <div className="taeled-btn text-center position-relative">
-                      <a href="#">Say Hi! 👋</a>
+                      <a href="/contact">Say Hi! 👋</a>
                     </div>
                   </div>
                 </div>

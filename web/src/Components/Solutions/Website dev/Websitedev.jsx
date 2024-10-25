@@ -476,7 +476,7 @@ const Websitedev = () => {
                       <p>{project.description}</p>
                       <div className="web-btn">
                         <div className="taeled-btn text-center position-relative text-uppercase responsive-btn">
-                          <a href="#">Read More</a>
+                          <a href="/websitedev">Read More</a>
                         </div>
                         <div className="taeled-btn-black2 text-center position-relative text-uppercase responsive-btn-black">
                           <a
@@ -522,7 +522,7 @@ const Websitedev = () => {
                   </div>
 
                   <div className="taeled-btn text-center position-relative">
-                    <a href="#">Say Hi! 👋</a>
+                    <a href="/contact">Say Hi! 👋</a>
                   </div>
                 </div>
               </div>
