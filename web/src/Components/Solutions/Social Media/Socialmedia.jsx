@@ -97,7 +97,7 @@ const Socialmedia = () => {
             <br />
             <div className="team-content-wrapper-2 clearfix">
               <div className="team-member-content-2">
-                <div className="row">
+                <div className="row socialpg">
                   <div className="col-lg-4 col-md-6">
                     <div className="team-member-innerbox">
                       <div className="team-member-img position-relative">

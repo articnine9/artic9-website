@@ -492,7 +492,7 @@ const Websitedev = () => {
                   </div>
                 </div>
               </div>
-              <hr />
+              <hr className="web-hr"/>
             </div>
           ))}
         </div>

@@ -1,5 +1,5 @@
 .about-section-4-whitebg {
-  margin-bottom: 20px;
+  margin-bottom: 20px ;
 }
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
 .design-section {
@@ -31,7 +31,6 @@
 .timeline-content {
   padding: 20px;
   background: #fff;
-
   border-radius: 5px;
   color: rgb(0, 0, 0);
   padding: 1.75rem;
@@ -78,4 +77,9 @@ h3 {
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
+}
+
+.socialpg{
+  height: 600px;
+  margin-top: 50px;
 }

@@ -51,8 +51,8 @@
   cursor: pointer;
   transform: translateY(0px);
   position: relative;
-  background: #000;
-  color: #ffc107;
+  background: #ffc107;
+  color: #000;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
   transition: 150ms all ease-in-out;
 }
@@ -62,28 +62,17 @@
   width: 54px;
   height: 54px;
   transition: all 0.5s ease-in-out;
-  color: #ffc107;
+  color: #000000;
 }
 
 .button-with-icon:active {
   transform: translateY(3px);
-  box-shadow: inset 0 16px 2px -15px rgba(0, 0, 0, 0),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
-    inset 0 1px 20px rgba(0, 0, 0, 0.1), 0 0 0 #000000,
-    0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(0, 0, 0, 0);
-}
-.button-with-icon:hover {
-  box-shadow: inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.3), inset 0 1px 20px rgba(0, 0, 0, 0),
-    0 3px 0 #000000, 0 3px 2px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .button-with-icon:hover .text {
   transform: translateX(80px);
 }
 .button-with-icon:hover .icon {
-  transform: translate(23px);
+  transform: translate(35px);
 }
 
 .text {
@@ -112,4 +101,67 @@
 .nav-link,
 .dropdown-item {
   color: #000 !important;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none; 
+  float: left;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 1.5rem;
+  opacity: 0; 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  transform: translateY(-10px); 
+}
+
+.dropdown-menu.show {
+  display: block; 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+/* Add these to your Header.css */
+
+/* Navbar styles for mobile */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    padding: 0; /* Remove any default padding */
+  }
+
+  .nav-item {
+    width: 100%; /* Make nav items full width */
+  }
+
+  .dropdown-menu {
+    position: static; /* Change position to static for mobile */
+    width: 100%; /* Full width dropdown */
+    opacity: 1; /* Ensure it shows when active */
+    transform: translateY(0); /* Reset transformation */
+    display: none; /* Still control visibility */
+  }
+
+  .dropdown-menu.show {
+    display: block; /* Show the dropdown when active */
+  }
 }

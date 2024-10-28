@@ -10,8 +10,8 @@ import glry6 from "../../../Assets/case_studies/harris_nadar/case03.webp";
 import grid1 from "../../../Assets/case_studies/harris_nadar/grid-1.png";
 import grid2 from "../../../Assets/case_studies/harris_nadar/2.png";
 import grid3 from "../../../Assets/case_studies/harris_nadar/gird-3.png";
-import nxt from "../../../Assets/nxt.png";
-import prev from "../../../Assets/prev.png";
+// import nxt from "../../../Assets/nxt.png";
+// import prev from "../../../Assets/prev.png";
 
 const Harrisnadar = () => {
   return (
@@ -189,11 +189,10 @@ const Harrisnadar = () => {
         </div>
       </section>
 
-      <section id="portfolio-details" className="portfolio-details-section">
+      {/* <section id="portfolio-details" className="portfolio-details-section">
         <div className="portfolio-details-content">
           <div className="portfolio-details-post-area">
             <div className="row">
-              {/* Previous Project */}
               <div className="col-md-6 no-padding">
                 <div className="portfolio-next-prev-post clearfix headline">
                   <div className="portfolio-np-img float-left">
@@ -206,7 +205,6 @@ const Harrisnadar = () => {
                 </div>
               </div>
 
-              {/* Next Project */}
               <div className="col-md-6 no-padding">
                 <div className="portfolio-next-prev-post clearfix headline">
                   <div className="portfolio-np-img float-right">
@@ -223,7 +221,7 @@ const Harrisnadar = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

@@ -8,8 +8,8 @@ import Id2 from "../../../Assets/case_studies/gt-holidays/identity-img2.webp";
 import Insta1 from "../../../Assets/case_studies/gt-holidays/instagram01.webp";
 import Insta2 from "../../../Assets/case_studies/gt-holidays/instagram02.webp";
 import Insta3 from "../../../Assets/case_studies/gt-holidays/instagram03.webp";
-import nxt from "../../../Assets/nxt.png";
-import prev from "../../../Assets/prev.png";
+// import nxt from "../../../Assets/nxt.png";
+// import prev from "../../../Assets/prev.png";
 import CounterSection from "./Countersection";
 
 const Gtholiday = () => {
@@ -263,11 +263,10 @@ const Gtholiday = () => {
 
       <CounterSection />
 
-      <section id="portfolio-details" className="portfolio-details-section">
+      {/* <section id="portfolio-details" className="portfolio-details-section">
         <div className="portfolio-details-content">
           <div className="portfolio-details-post-area">
             <div className="row">
-              {/* Previous Project */}
               <div className="col-md-6 no-padding">
                 <div className="portfolio-next-prev-post clearfix headline">
                   <div className="portfolio-np-img float-left">
@@ -280,7 +279,6 @@ const Gtholiday = () => {
                 </div>
               </div>
 
-              {/* Next Project */}
               <div className="col-md-6 no-padding">
                 <div className="portfolio-next-prev-post clearfix headline">
                   <div className="portfolio-np-img float-right">
@@ -297,7 +295,7 @@ const Gtholiday = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

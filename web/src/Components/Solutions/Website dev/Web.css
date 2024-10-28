@@ -235,7 +235,7 @@
 }
 
 @media (max-width: 1024px) {
-  hr {
+  .web-hr {
     margin-top: 100px !important;
   }
 }

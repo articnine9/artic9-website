@@ -655,3 +655,17 @@
 .bredcrumb-title h2{
   color: #fff !important;
 }
+
+@media screen and (max-width: 1440px){
+  .contact-banner {
+    margin-top: 90px;
+    background-size: cover;
+    height: 300px;
+  }
+  .contact-banner img {
+    display: none;
+  }
+  .bredcrumb-title h2{
+    padding-bottom: 150px ;
+  }
+}
