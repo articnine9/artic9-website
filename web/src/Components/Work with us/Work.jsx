@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Contact from "../../Assets/contact-img.png";
 import Shape1 from "../../Assets/brs1.png";
-import Shape2 from "../../Assets/brs2.png";
 
 import { FaUser } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -11,6 +10,52 @@ import { FaEdit } from "react-icons/fa";
 
 import "./Work.css";
 const Work = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState(""); // To track the form submission status
+
+  // Handle form input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    
+    const response = await fetch("https://formspree.io/f/xeoqaydw", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+    } else {
+      setStatus("error");
+    }
+  };
+
+  
   return (
     <>
       <section
@@ -23,12 +68,7 @@ const Work = () => {
         >
           <img src={Shape1} alt="" />
         </div>
-        <div
-          className="slider-deco2 position-absolute"
-          style={{ transform: "translateY(-100px) rotateY(-200deg)" }}
-        >
-          <img src={Shape2} alt="" />
-        </div>
+        
         <div className="background_overlay"></div>
         <div className="container">
           <div className="bredcrumb-content position-relative">
@@ -57,7 +97,7 @@ const Work = () => {
                     <h2>Contact us</h2>
                   </div>
                   <div className="contact-form-wrapper">
-                    <form action="#" method="post">
+                  <form onSubmit={handleSubmit}>
                       <div className="row">
                         <div className="col-md-6">
                           <div className="contact-info position-relative">
@@ -66,6 +106,8 @@ const Work = () => {
                               name="name"
                               type="text"
                               placeholder="Enter your name"
+                              value={formData.name}
+                              onChange={handleChange}
                             />
                             <div className="icon-bg position-absolute">
                               <FaUser />
@@ -79,6 +121,8 @@ const Work = () => {
                               name="email"
                               type="email"
                               placeholder="Enter your email"
+                              value={formData.email}
+                              onChange={handleChange}
                             />
                             <div className="icon-bg position-absolute">
                               <IoMdMail />
@@ -92,6 +136,8 @@ const Work = () => {
                               name="phone"
                               type="text"
                               placeholder="Enter your phone"
+                              value={formData.phone}
+                              onChange={handleChange}
                             />
                             <div className="icon-bg position-absolute">
                               <FaPhone />
@@ -105,6 +151,8 @@ const Work = () => {
                               name="subject"
                               type="text"
                               placeholder="Enter Subject"
+                              value={formData.subject}
+                              onChange={handleChange}
                             />
                             <div className="icon-bg position-absolute">
                               <FaArrowDown />
@@ -115,8 +163,10 @@ const Work = () => {
                           <div className="contact-info position-relative">
                             <textarea
                               name="message"
-                              placeholder="ENTER message"
-                            ></textarea>
+                              placeholder="Enter message"
+                              value={formData.message}
+                              onChange={handleChange}
+                            />
                             <div className="icon-bg position-absolute">
                               <FaEdit />
                             </div>
@@ -132,6 +182,17 @@ const Work = () => {
                         </button>
                       </div>
                     </form>
+                    {/* Show status messages */}
+                    {status === "success" && (
+                      <div className="alert alert-success">
+                        Your message has been sent successfully.
+                      </div>
+                    )}
+                    {status === "error" && (
+                      <div className="alert alert-danger">
+                        Something went wrong. Please try again later.
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
