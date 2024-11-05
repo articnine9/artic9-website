@@ -65,7 +65,7 @@ const Slider = () => {
             className="logo-image"
           />
           <br /> <br />
-          <div>
+          <div className="div flex">
             <span className="spn">
               {slides[currentSlide].cnt1} <b>|</b>
             </span>

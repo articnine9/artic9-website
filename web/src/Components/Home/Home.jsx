@@ -605,8 +605,8 @@ const Home = () => {
       <section id="team-service" className="team-service-section bg-light1">
         <div className="container">
           <div className="team-service-wrapper">
-            <div className="row">
-              <div className="col-lg-12 col-md-6">
+            <div className="row team-head">
+              <div className="col-lg-12 col-md-12">
                 <div className="td-faq-body td-faq-body-sub-content text-center">
                   <b
                     style={{
@@ -640,7 +640,7 @@ const Home = () => {
       {/* ----------------------------------------------lets work ---------------------------------------------- */}
       <section id="team-page-area" class="team-page-section padding-tb-140">
         <div class="section-title text-center headline ">
-          <div class="td-faq-body td-faq-body-sub-content font-large padding-tb-90">
+          <div class="td-faq-body td-faq-body-sub-content-work font-large ">
             <b>Let's Work Together</b>
           </div>
           <br />

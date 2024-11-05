@@ -12,7 +12,7 @@
   line-height: 55px;
   background-color: #ffcc01;
 }
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -23,7 +23,6 @@
   position: relative;
   width: 100;
   height: 100vh;
-  padding: 200px 0px;
   overflow: hidden;
   background-color: rgb(255, 184, 0);
   background: linear-gradient(
@@ -75,13 +74,20 @@
 .spn b {
   color: #000;
 }
+
 @media (max-width: 1024px) {
   .spn {
     font-size: 0.9rem; /* Slightly smaller on tablets */
   }
 
   .gt-head {
-    font-size: 1.8rem; /* Adjust heading size */
+    font-size: 70px; /* Adjust heading size */
+  }
+  .font-large b {
+    font-weight: 500;
+    font-size: 200px;
+    font-family: "Bebas Neue";
+    font-style: italic;
   }
 }
 
@@ -91,11 +97,17 @@
   }
 
   .gt-head {
-    font-size: 1.5rem; /* Adjust heading size */
+    font-size: 60px; /* Adjust heading size */
   }
 
   .logo-image {
     max-width: 70%; /* Logo size adjustment */
+  }
+  .font-large b {
+    font-weight: 500;
+    font-size: 190px;
+    font-family: "Bebas Neue";
+    font-style: italic;
   }
 }
 
@@ -107,7 +119,7 @@
   }
 
   .gt-head {
-    font-size: 1.3rem; /* Smaller heading for mobile */
+    font-size: 60px; /* Smaller heading for mobile */
   }
 
   .carousel-btn {
@@ -130,11 +142,16 @@
 
   .slides {
     display: block;
-  
   }
-  .slider-container{
+  .slider-container {
     width: 100;
     height: fit-content;
+  }
+  .team-head {
+    width: 99vw;
+  }
+  .team-service-section .team-service-wrapper {
+    padding: 0 !important;
   }
 }
 /* Another carousel */
@@ -539,7 +556,6 @@ a:hover {
   font-family: "poppins", sans-serif;
   background-color: #000000;
   color: #fff;
-
 }
 .taeled-btn a {
   text-decoration: none;
@@ -566,7 +582,6 @@ a:hover {
   font-family: "poppins", sans-serif;
   background-color: #ffffff;
   color: #000000;
-
 }
 .taeled-btn3 a {
   text-decoration: none;
@@ -609,18 +624,17 @@ a:hover {
   font-weight: 350;
 }
 
-.btns-div{
+.btns-div {
   width: 100%;
   position: absolute;
   display: flex;
-
 }
 
- @media (max-width: 767px) {
-  .taeled-btn{
+@media (max-width: 767px) {
+  .taeled-btn {
     margin-right: 10px;
   }
- }
+}
 
 /* Team-service */
 
@@ -1074,19 +1088,21 @@ a:hover {
 }
 
 /* lets-work */
-
+.td-faq-body-sub-content-work {
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 43px;
+}
 .padding-tb-140 {
   padding: 300px 0px 300px;
 }
 
-@media only screen and (min-width: 768px) {
-  .font-large b {
-    font-weight: 500;
-    font-size: 200px;
-    font-family: "Bebas Neue";
-    font-style: italic;
-    letter-spacing: 1px;
-  }
+.font-large b {
+  font-weight: 500;
+  font-size: 200px;
+  font-family: "Bebas Neue";
+  font-style: italic;
 }
 
 .mail-id a {
@@ -1094,7 +1110,35 @@ a:hover {
   color: #000;
   font-family: initial;
 }
+@media (max-width: 1024px) {
+  .font-large b {
+    font-size: 130px;
+  }
+}
 
+@media (max-width: 768px) {
+  .font-large b {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  .td-faq-body-sub-content-work {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .font-large b {
+    font-size: 80px;
+  }
+}
+@media (max-width: 425px) {
+  .font-large b {
+    font-size: 60px;
+  }
+}
 /* @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Oswald:wght@400;500;600;700&amp;display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Satisfy&family=Tinos&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Satisfy&family=Tinos&display=swap");
@@ -1427,7 +1471,6 @@ body {
   transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
 }
 
-
 [data-background] {
   background-size: inherit;
   background-repeat: no-repeat;
@@ -1498,8 +1541,6 @@ select:visited {
   margin-bottom: 0;
 }
 
-
-
 .headline h3,
 .headline h4,
 .headline h5,
@@ -1516,7 +1557,6 @@ select:visited {
   height: 100%;
   position: absolute;
 }
-
 
 .section-title {
   display: block;
@@ -3046,7 +3086,6 @@ select:visited {
 .about-right-img .about-bottom-img {
   top: 14px;
   right: 65px;
-
 }
 
 .about-mission-vission {
@@ -4703,8 +4742,7 @@ select:visited {
   z-index: 1;
   padding: 60px;
   margin: 0 auto;
-  max-width: 970px;
-  /* background-color: #fff; */
+  max-width: 910px;
 }
 .testimonial-inner-wrap:before {
   left: 0;
@@ -6898,6 +6936,7 @@ select:visited {
   z-index: 1;
   padding-left: 35px;
 }
+
 .team-service-section .team-service-innerbox:after {
   opacity: 0;
   top: -27px;
@@ -7556,7 +7595,7 @@ select:visited {
 
 .price-filter-widget .fliter-range-bar {
   -webkit-appearance: none;
-  -moz-appearance: none; 
+  -moz-appearance: none;
   appearance: none;
   width: 100%;
   height: 2px;
@@ -7767,8 +7806,8 @@ select:visited {
   font-weight: 700;
   padding: 10px 35px 10px 10px;
   font-family: "poppins", sans-serif;
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
@@ -9865,7 +9904,6 @@ select:visited {
   .testimonial-slider-for .testimonial-main-img {
     top: -90px;
     left: -13px;
-
   }
 
   .testimonial-slider-textinner .testimonial-main-text {
@@ -10601,7 +10639,6 @@ select:visited {
   }
 }
 
-
 .taeled-btn2 {
   z-index: 1;
   height: 44px;
@@ -10717,7 +10754,6 @@ select:visited {
   animation: zoom-in-zoom-out 3s ease infinite;
 }
 
-
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);
@@ -10744,24 +10780,9 @@ select:visited {
   .about-content-wrapper-4 .about-text-wrapper {
     padding-top: 27px;
   }
-
-  .font-large b {
-    font-family: "Bebas Neue";
-    font-style: italic;
-    font-weight: 700;
-    font-size: 80x;
-    line-height: 85px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
-  .font-large b {
-    font-weight: 500;
-    font-size: 200px;
-    font-family: "Bebas Neue";
-    font-style: italic;
-  }
-
   .font-normal b {
     font-weight: 600;
     font-size: 100px;

@@ -3,7 +3,8 @@ import "./Home.css";
 import Tst1 from "../../Assets/testimonial/tst1.jpg";
 import Tst2 from "../../Assets/testimonial/tsn1.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { FcPrevious } from "react-icons/fc";
+import { FcNext } from "react-icons/fc";
 const testimonials = [
   {
     img: Tst1,
@@ -65,7 +66,7 @@ const Testimonial = () => {
                 role="button"
                 data-slide="prev"
               >
-                Prev
+                <FcPrevious />
               </a>
               <a
                 className="testimonial-slider-btn2 carousel-control-next mx-3"
@@ -73,7 +74,7 @@ const Testimonial = () => {
                 role="button"
                 data-slide="next"
               >
-                Next
+               <FcNext />
               </a>
             </div>
           </div>

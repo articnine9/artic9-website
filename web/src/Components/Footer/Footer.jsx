@@ -115,7 +115,7 @@ const Footer = () => {
                    hi@artic9.com
                 </a>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 flex">
                 <IoHomeSharp className="icns mx-2" />
                 <a
                   href="https://www.google.com/maps/place/Artic+Nine+Creative+Agency/@8.1862086,77.4257656,17.79z/data=!4m6!3m5!1s0x3b04f1246b9aa969:0xfa80cd8763303aa8!8m2!3d8.1861488!4d77.4254668!16s%2Fg%2F11fn7v1vn7?entry=ttu"
