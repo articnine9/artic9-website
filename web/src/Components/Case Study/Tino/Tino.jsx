@@ -7,8 +7,7 @@ import process1 from '../../../Assets/case_studies/tino-engineering/process01.pn
 import process2 from '../../../Assets/case_studies/tino-engineering/process02.png'
 import process3 from '../../../Assets/case_studies/tino-engineering/process03.png'
 import process4 from '../../../Assets/case_studies/tino-engineering/process04.png'
-// import nxt from "../../../Assets/nxt.png";
-// import prev from "../../../Assets/prev.png";
+;
 
 import CounterSection from '../GT holidays/Countersection'
 const Tino = () => {
@@ -126,39 +125,7 @@ const Tino = () => {
 
     <CounterSection/>
 
-    {/* <section id="portfolio-details" className="portfolio-details-section">
-        <div className="portfolio-details-content">
-          <div className="portfolio-details-post-area">
-            <div className="row">
-              <div className="col-md-6 no-padding">
-                <div className="portfolio-next-prev-post clearfix headline">
-                  <div className="portfolio-np-img float-left">
-                    <img src={prev} alt="Previous Project" />
-                  </div>
-                  <div className="portfolio-np-text">
-                    <span>Prev Project</span>
-                    <h3>Snowch</h3>
-                  </div>
-                </div>
-              </div>
 
-              <div className="col-md-6 no-padding">
-                <div className="portfolio-next-prev-post clearfix headline">
-                  <div className="portfolio-np-img float-right">
-                    <img src={nxt} alt="Next Project" />
-                  </div>
-                  <div className="portfolio-np-text text-right">
-                    <a href="/gtholiday">
-                      <span>Next Project</span>
-                      <h3>GT Holidays</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </>
   )
 }

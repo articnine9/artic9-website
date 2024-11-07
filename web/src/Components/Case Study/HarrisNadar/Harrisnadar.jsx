@@ -10,8 +10,7 @@ import glry6 from "../../../Assets/case_studies/harris_nadar/case03.webp";
 import grid1 from "../../../Assets/case_studies/harris_nadar/grid-1.png";
 import grid2 from "../../../Assets/case_studies/harris_nadar/2.png";
 import grid3 from "../../../Assets/case_studies/harris_nadar/gird-3.png";
-// import nxt from "../../../Assets/nxt.png";
-// import prev from "../../../Assets/prev.png";
+
 
 const Harrisnadar = () => {
   return (
@@ -188,40 +187,6 @@ const Harrisnadar = () => {
           </div>
         </div>
       </section>
-
-      {/* <section id="portfolio-details" className="portfolio-details-section">
-        <div className="portfolio-details-content">
-          <div className="portfolio-details-post-area">
-            <div className="row">
-              <div className="col-md-6 no-padding">
-                <div className="portfolio-next-prev-post clearfix headline">
-                  <div className="portfolio-np-img float-left">
-                    <img src={prev} alt="Previous Project" />
-                  </div>
-                  <div className="portfolio-np-text">
-                    <span>Prev Project</span>
-                    <h3>Snowch</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-6 no-padding">
-                <div className="portfolio-next-prev-post clearfix headline">
-                  <div className="portfolio-np-img float-right">
-                    <img src={nxt} alt="Next Project" />
-                  </div>
-                  <div className="portfolio-np-text text-right">
-                    <a href="/gtholiday">
-                      <span>Next Project</span>
-                      <h3>GT Holidays</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 };
