@@ -24,31 +24,201 @@ import Footer from "../Footer/Footer";
 import PreloaderWrapper from "../Preloader/PreloaderWrapper";
 import ScrollupWrapper from "../Preloader/ScrollupWrapper";
 
-
 const Approutes = () => {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<ScrollupWrapper><PreloaderWrapper><Home /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/gtholiday" element={<ScrollupWrapper><PreloaderWrapper><Gtholiday /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/harrisnadar" element={<ScrollupWrapper><PreloaderWrapper><Harrisnadar /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/tino" element={<ScrollupWrapper><PreloaderWrapper><Tino /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/story" element={<ScrollupWrapper><PreloaderWrapper><Story /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/business" element={<ScrollupWrapper><PreloaderWrapper><Business /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/design" element={<ScrollupWrapper><PreloaderWrapper><Design /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/engineering" element={<ScrollupWrapper><PreloaderWrapper><Engineering /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/facilities" element={<ScrollupWrapper><PreloaderWrapper><Facilities /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/finance" element={<ScrollupWrapper><PreloaderWrapper><Finance /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/legal" element={<ScrollupWrapper><PreloaderWrapper><Legal /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/marketing" element={<ScrollupWrapper><PreloaderWrapper><Marketing /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/people" element={<ScrollupWrapper><PreloaderWrapper><People /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/sales" element={<ScrollupWrapper><PreloaderWrapper><Sales /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/searchengine" element={<ScrollupWrapper><PreloaderWrapper><Searchengine /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/socialmedia" element={<ScrollupWrapper><PreloaderWrapper><Socialmedia /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/videoprod" element={<ScrollupWrapper><PreloaderWrapper><Videoprod /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/websitedev" element={<ScrollupWrapper><PreloaderWrapper><Websitedev /></PreloaderWrapper></ScrollupWrapper>} />
-        <Route path="/contact" element={<ScrollupWrapper><PreloaderWrapper><Work /></PreloaderWrapper></ScrollupWrapper>} />
+        <Route
+          path="/"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Home />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/gtholiday"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Gtholiday />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/harrisnadar"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Harrisnadar />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/tino"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Tino />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/story"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Story />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/business"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Business />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/design"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Design />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/engineering"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Engineering />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/facilities"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Facilities />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/finance"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Finance />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/legal"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Legal />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/marketing"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Marketing />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/people"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <People />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/sales"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Sales />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/searchengine"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Searchengine />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/socialmedia"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Socialmedia />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/videoprod"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Videoprod />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/websitedev"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Websitedev />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <ScrollupWrapper>
+              <PreloaderWrapper>
+                <Work />
+              </PreloaderWrapper>
+            </ScrollupWrapper>
+          }
+        />
       </Routes>
       <Footer />
     </Router>

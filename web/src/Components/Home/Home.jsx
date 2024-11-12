@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Home.css";
 
 import Boy from "../../Assets/boy1.png";
@@ -16,25 +16,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Client from "./Client";
 import Testimonial from "./Testimonial";
 import Slider from "./Slider";
-import AnotherSlider from "./AnotherSlider";
 import ServiceTab from "./ServiceTab";
 import Scrollup from "../Preloader/Scrollup";
 
 const Home = () => {
+  const socialMediaRef = useRef(null);
+  const videoProductionRef = useRef(null);
+  const websiteDevelopmentRef = useRef(null);
+  const seoRef = useRef(null);
+
+  // Smooth scroll to section when a link is clicked
+  const scrollToSection = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
   const services = [
-    { title: "Marketing Masters", number: "01" },
-    { title: "Problem Solvers", number: "02" },
-    { title: "Affordable Packages", number: "03" },
-    { title: "Guaranteed Results", number: "04" },
+    { title: "SOCIAL MEDIA MARKETING", route: socialMediaRef},
+    { title: "VIDEO PRODUCTION" ,route: videoProductionRef},
+    { title: "WEBSITE DEVELOPMENT" ,route: websiteDevelopmentRef},
+    { title: "SEARCH ENGINE OPTIMIZATION",route: seoRef },
   ];
   return (
     <>
       <Scrollup />
       <Slider />
-
-      <div className="sec-carousel">
-        <AnotherSlider />
-      </div>
 
       {/* ---------------------------------------About ------------------------------------------------------- */}
       <section id="about-4" className="about-section-4">
@@ -100,48 +107,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ----------------------------------service sec--------------------------------------------------------- */}
-      <section id="team-service" className="team-service-section">
-        <div className="container">
-          <div className="team-service-wrapper">
-            <div className="row">
-              {services.map((service, index) => (
-                <div key={index} className="col-lg-3 col-md-6 ">
-                  <div className="team-service-innerbox position-relative text-center p-5">
-                    <div className="team-service-title headline">
-                      <h3
-                        style={{
-                          fontSize: "18px",
-                          fontWeight: 500,
-                          textTransform: "none",
-                        }}
-                      >
-                        <a
-                          href="/"
-                          style={{ textDecoration: "none", color: "#fff" }}
-                        >
-                          {service.title}
-                        </a>
-                      </h3>
-                      <h3 style={{ fontSize: "70px" }}>
-                        <a
-                          href="/"
-                          style={{ textDecoration: "none", color: "#fff" }}
-                        >
-                          {service.number}
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* --------------------------------service tab------------------------------------------------ */}
       <ServiceTab />
+
+      {/* ---------------------------------------------------Client---------------------------------- */}
+      <Client />
 
       {/* ----------------------------------------blog------------------------------------------ */}
       <section id="blog" class="blog-section-1">
@@ -294,14 +264,46 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ---------------------------------------------------Client---------------------------------- */}
-      <Client />
-
+      {/* ----------------------------------service sec--------------------------------------------------------- */}
+      <section id="team-service" className="team-service-section">
+        <div className="container">
+          <h2 className="serviceheader">
+            Make your audience remind you all time
+          </h2>
+          <div className="team-service-wrapper">
+            <div className="row">
+              {services.map((service, index) => (
+                <div key={index} className="col-lg-3 col-md-6 ">
+                  <div className="team-service-innerbox position-relative text-center p-5">
+                    <div className="team-service-title headline">
+                      <h3
+                        style={{
+                          fontSize: "18px",
+                          fontWeight: 500,
+                          textTransform: "none",
+                        }}
+                      >
+                        <a
+                          className="servicecnt"
+                          onClick={() => scrollToSection(service.route)}
+                          style={{ textDecoration: "none", color: "#fff", cursor: "pointer" }}
+                        >
+                          {service.title}
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       {/* -----------------------------------Main-Service---------------------------------------------- */}
       <section id="about-4" className="service-4">
         <div className="container">
           <div className="about-content-wrapper-4">
-            <div className="row">
+            <div className="row "  ref={socialMediaRef}>
               <div className="col-lg-6">
                 <div className="about-text-wrapper">
                   <div className="section-title title-border gradiant-border headline">
@@ -377,7 +379,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row" ref={videoProductionRef}>
               <div className="col-lg-6">
                 <div className="about-img text-center ease-in-out duration-300 zoom-in-out-box">
                   <img src={Vid} style={{ paddingTop: "130px" }} alt="" />
@@ -449,7 +451,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row" ref={websiteDevelopmentRef}>
               <div className="col-lg-6">
                 <div className="about-text-wrapper">
                   <div className="section-title title-border gradiant-border headline">
@@ -525,7 +527,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row" ref={seoRef}>
               <div className="col-lg-7">
                 <div className="about-img text-center ease-in-out duration-300 zoom-in-out-box">
                   <img
