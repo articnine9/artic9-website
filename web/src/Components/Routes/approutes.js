@@ -23,7 +23,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import PreloaderWrapper from "../Preloader/PreloaderWrapper";
 import ScrollupWrapper from "../Preloader/ScrollupWrapper";
-
+import '../../App.css'
 const Approutes = () => {
   return (
     <Router>
@@ -34,7 +34,7 @@ const Approutes = () => {
           element={
             <ScrollupWrapper>
               <PreloaderWrapper>
-                <Home />
+                <Home className="home"/>
               </PreloaderWrapper>
             </ScrollupWrapper>
           }

@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom"; 
 import "./Navbar.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logo from "../../Assets/logo1.png";
 
-
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(null);
+
+  const location = useLocation(); 
+  const isHomePage = location.pathname === "/"; 
 
   const toggleOverlayMenu = () => {
     setIsActive(!isActive);
@@ -19,7 +22,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navcontainer">
+      <div
+        className={`navcontainer ${isHomePage ? "" : "has-bg"}`}
+      >
         <div className="navbar">
           <div className="logo">
             <a href="/">
@@ -160,7 +165,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </>
   );

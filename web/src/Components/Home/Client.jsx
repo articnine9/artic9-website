@@ -38,34 +38,34 @@ import YMCA from "../../Assets/clients-logo/ymca.jpg";
 const clients = [
   { src: HarrisNadar, alt: "Harris Nadar" },
   { src: AT, alt: "AT" },
-  { src: GT,  alt: "GT" },
-  { src: Titan,  alt: "Titan" },
-  { src: TG,  alt: "TG" },
-  { src: Snowch,  alt: "Snowch" },
+  { src: GT, alt: "GT" },
+  { src: Titan, alt: "Titan" },
+  { src: TG, alt: "TG" },
+  { src: Snowch, alt: "Snowch" },
   { src: Arunachala, alt: "Arunachala" },
-  { src: Pragurp,  alt: "Pragurp" },
-  { src: ColdAir,  alt: "Cold Air" },
-  { src: Delano,  alt: "Delano" },
-  { src: DigiMart,  alt: "Digi Mart" },
-  { src: Ayutha,  alt: "Ayutha" },
-  { src: Hairways,  alt: "Hairways" },
-  { src: BrandPartners,  alt: "Brand Partners" },
-  { src: Platez,  alt: "Platez" },
-  { src: RajanCo,  alt: "Rajan Co" },
-  { src: Sident,  alt: "Sident" },
-  { src: ClearEye,  alt: "Clear Eye" },
-  { src: Thasor,  alt: "Thasor" },
-  { src: AnandaBhavan,  alt: "Ananda Bhavan" },
-  { src: TGImage,  alt: "TG" },
-  { src: DCS,  alt: "DCS" },
-  { src: Akshaya,  alt: "Akshaya" },
-  { src: Karpagam,  alt: "Karpagam" },
-  { src: MarthaGapharma,  alt: "Martha Gapharma" },
-  { src: TitanEyePlus,  alt: "Titan Eye Plus" },
-  { src: YMCA,  alt: "YMCA" },
-  { src: Votto,  alt: "Votto" },
-  { src: Spring,  alt: "Spring" },
-  { src: FirstLoan,  alt: "First Loan" },
+  { src: Pragurp, alt: "Pragurp" },
+  { src: ColdAir, alt: "Cold Air" },
+  { src: Delano, alt: "Delano" },
+  { src: DigiMart, alt: "Digi Mart" },
+  { src: Ayutha, alt: "Ayutha" },
+  { src: Hairways, alt: "Hairways" },
+  { src: BrandPartners, alt: "Brand Partners" },
+  { src: Platez, alt: "Platez" },
+  { src: RajanCo, alt: "Rajan Co" },
+  { src: Sident, alt: "Sident" },
+  { src: ClearEye, alt: "Clear Eye" },
+  { src: Thasor, alt: "Thasor" },
+  { src: AnandaBhavan, alt: "Ananda Bhavan" },
+  { src: TGImage, alt: "TG" },
+  { src: DCS, alt: "DCS" },
+  { src: Akshaya, alt: "Akshaya" },
+  { src: Karpagam, alt: "Karpagam" },
+  { src: MarthaGapharma, alt: "Martha Gapharma" },
+  { src: TitanEyePlus, alt: "Titan Eye Plus" },
+  { src: YMCA, alt: "YMCA" },
+  { src: Votto, alt: "Votto" },
+  { src: Spring, alt: "Spring" },
+  { src: FirstLoan, alt: "First Loan" },
 ];
 
 class App extends Component {
@@ -94,21 +94,24 @@ class App extends Component {
     };
     return (
       <div className="mainContainer">
-        <span className="ourclients">Client Logos Carousel</span>
-        <Slider {...setting1}>
-          {clients.map((client, index) => (
-            <div key={index} className="slidercontainer">
-              <img src={client.src} width={200} alt={client.alt} />
-            </div>
-          ))}
-        </Slider>
-        <Slider {...setting2}>
-          {clients.map((client, index) => (
-            <div key={index} className="slidercontainer">
-              <img src={client.src} width={200} alt={client.alt} />
-            </div>
-          ))}
-        </Slider>
+        <h3 className="ourclients">Our Clients</h3>
+        <div className="sliders">
+          {" "}
+          <Slider {...setting1}>
+            {clients.map((client, index) => (
+              <div key={index} className="slidercontainer">
+                <img src={client.src} width={200} alt={client.alt} />
+              </div>
+            ))}
+          </Slider>
+          <Slider {...setting2}>
+            {clients.map((client, index) => (
+              <div key={index} className="slidercontainer">
+                <img src={client.src} width={200} alt={client.alt} />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     );
   }
