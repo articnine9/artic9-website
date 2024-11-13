@@ -5,7 +5,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 const Credits = () => {
   return (
     <>
-      <div className="credits">
+      <div className="credits" style={{ position: 'relative', zIndex: 1 }}>
         <div className="story">
           <div className="desc">
             <span>

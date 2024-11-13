@@ -46,8 +46,8 @@ const Slider = () => {
   }, [slides.length]);
 
   return (
-    <div className="slider-container row">
-      <div className={`slides ${fade ? "fade-out" : "fade-in"} col-lg-12`}>
+    <div className="slider-container">
+      <div className={`slides ${fade ? "fade-out" : "fade-in"} col-lg-12`} style={{ position: 'sticky', top: 0, zIndex: 10 }}>
         {/* Image Section */}
         <div className="slider-image" data-aos="fade-right">
           <img
