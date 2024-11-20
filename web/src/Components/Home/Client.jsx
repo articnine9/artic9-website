@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -68,53 +68,57 @@ const clients = [
   { src: FirstLoan, alt: "First Loan" },
 ];
 
-class App extends Component {
-  render() {
-    const setting1 = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 3000,
-      cssEase: "linear",
-      // rtl: true,
-    };
-    const setting2 = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 3000,
-      cssEase: "linear",
-      rtl: true,
-    };
-    return (
-      <div className="mainContainer">
-        <h3 className="ourclients">Our Clients</h3>
-        <div className="sliders">
-          {" "}
-          <Slider {...setting1}>
-            {clients.map((client, index) => (
-              <div key={index} className="slidercontainer">
-                <img src={client.src} width={200} alt={client.alt} />
-              </div>
-            ))}
-          </Slider>
-          <Slider {...setting2}>
-            {clients.map((client, index) => (
-              <div key={index} className="slidercontainer">
-                <img src={client.src} width={200} alt={client.alt} />
-              </div>
-            ))}
-          </Slider>
-        </div>
+const App = () => {
+  const setting1 = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: false,
+    arrows: false,
+    draggable: false,
+  };
+
+  const setting2 = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    rtl: true,
+    pauseOnHover: false,
+    arrows: false,
+    draggable: false,
+  };
+
+  return (
+    <div className="mainContainer">
+      <h3 className="ourclients">Our Clients</h3>
+      <div className="sliders">
+        <Slider {...setting1}>
+          {clients.map((client, index) => (
+            <div key={index} className="slidercontainer">
+              <img src={client.src} width={200} alt={client.alt} />
+            </div>
+          ))}
+        </Slider>
+        <Slider {...setting2}>
+          {clients.map((client, index) => (
+            <div key={index} className="slidercontainer">
+              <img src={client.src} width={200} alt={client.alt} />
+            </div>
+          ))}
+        </Slider>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;

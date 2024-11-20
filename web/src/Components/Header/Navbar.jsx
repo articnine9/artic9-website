@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom"; 
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Navbar.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,9 +8,25 @@ import Logo from "../../Assets/logo1.png";
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(null);
+  const [navbarWidth, setNavbarWidth] = useState(85);
 
-  const location = useLocation(); 
-  const isHomePage = location.pathname === "/"; 
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      let newWidth = 85 - scrollY / 10;
+      if (newWidth < 70) newWidth = 70;
+      setNavbarWidth(newWidth);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleOverlayMenu = () => {
     setIsActive(!isActive);
@@ -22,10 +38,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        className={`navcontainer ${isHomePage ? "" : "has-bg"}`}
-      >
-        <div className="navbar">
+      <div className={`navcontainer ${isHomePage ? "" : "has-bg"}`}>
+        <div className="navbar" style={{ width: `${navbarWidth}%` }}>
           <div className="logo">
             <a href="/">
               <img src={Logo} alt="logo" />
@@ -79,20 +93,26 @@ const Navbar = () => {
                   Services
                 </a>
                 {activeSubMenu === "services" && (
-                  <ul className="submenu right">
-                    <li>
-                      <a href="/socialmedia">Social Media Marketing</a>
-                    </li>
-                    <li>
-                      <a href="/videoprod">Video Production</a>
-                    </li>
-                    <li>
-                      <a href="/websitedev">Website Development</a>
-                    </li>
-                    <li>
-                      <a href="/searchengine">Search Engine Optimization</a>
-                    </li>
-                  </ul>
+                  < >
+                    <ul className="submenu right">
+                      <li>
+                        <a href="/socialmedia">Social Media Marketing</a>
+                      </li>
+                      <li>
+                        <a href="/videoprod">Video Production</a>
+                      </li>
+                      <li>
+                        <a href="/websitedev">Website Development</a>
+                      </li>
+                      <li>
+                        <a href="/searchengine">Search Engine Optimization</a>
+                      </li>
+                      <div className="menuimg">
+                        <h2>What's New</h2>
+                        <img src={Logo} alt="" />
+                      </div>
+                    </ul>
+                  </>
                 )}
               </li>
               <li className="menu-item">

@@ -1,53 +1,105 @@
-.credits {
+ .credits {
   width: 100%;
-  height: 50vw;
+  height: 100vh; 
   background: linear-gradient(90deg, #ffc107 40%, #ffc109 58%);
-  color: Black;
-  padding: 20px 0px;
-
+  color: black;
+  padding: 20px 0;
+  position: relative; 
+  overflow: hidden; 
 }
 
 .story {
+  height: 500px;
   width: 100%;
   padding: 70px 100px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
+
 .desc,
 .founder {
   padding: 50px 50px;
   width: 100%;
 }
+
 .founder {
   text-align: end;
 }
+
 .desc span {
   font-size: 2.5vw;
 }
+
 .founderlink {
   color: black !important;
   text-decoration: none;
-  text-align: justify;
-  font-size: larger;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
-.divider{
-  width: 80%;
+
+.divider {
+  width: 85%;
   text-align: center;
   margin: auto;
 }
+
+.scrollmove {
+  background: linear-gradient(90deg, #ffc107 40%, #ffc109 58%);
+  position: relative;
+  z-index: 10;
+  top: 400px;
+}
+
 .cmpnyname {
   width: 100%;
   text-align: center;
   margin-top: 75px;
 }
+
 .cmpnyname h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 20vw;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0); 
   font-style: italic;
   font-weight: bold;
   letter-spacing: 20px;
-  margin-bottom: 0px !important;
+  margin-bottom: 0px;
+  background-image: url("../../Assets/Mountain.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .credits {
+    height: auto;
+    padding: 20px 0;
+  }
 
+  .story {
+    position: relative;
+    padding: 30px;
+  }
+
+  .desc span {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+
+  .cmpnyname h1 {
+    font-size: 40vw; /* Larger font for small screens */
+  }
+
+  .founderlink {
+    font-size: 1rem; /* Adjust link font size for mobile */
+  }
+}

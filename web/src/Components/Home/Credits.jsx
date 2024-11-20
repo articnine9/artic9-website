@@ -1,11 +1,26 @@
-import React from 'react';
-import './Credits.css';
+import React, { useEffect, useState } from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
+import "./Credits.css";
 
 const Credits = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const textStyle = {
+    backgroundPosition: `center ${scrollY * 1.5}px`,
+  };
+
   return (
     <>
-      <div className="credits" style={{ position: 'relative', zIndex: 1 }}>
+      <div className="credits">
         <div className="story">
           <div className="desc">
             <span>
@@ -34,13 +49,17 @@ const Credits = () => {
             </a>
           </div>
         </div>
-        <hr className='divider' />
-        <div className="cmpnyname">
-          <h1>#beUnique</h1>
+
+        {/* Divider and Text */}
+        <div className="scrollmove">
+          <hr className="divider" />
+          <div className="cmpnyname">
+            <h1 style={textStyle}>#beUnique</h1>
+          </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Credits;

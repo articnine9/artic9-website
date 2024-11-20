@@ -13,7 +13,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="text-left text-lg-start text-muted bg-color-dark pt-4">
+    <footer className="text-left text-lg-start text-muted bg-color-dark pt-4 footer-body">
       <section>
         <div className="container text-md-start mt-5">
           <div className="row mt-3">

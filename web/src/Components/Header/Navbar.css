@@ -16,12 +16,17 @@
   padding: 0px 20px;
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.637);
-  width: 75%;
+  width: 85%;
   position: fixed;
   border-radius: 20px;
   height: 60px;
   z-index: 1000;
 }
+.navcontainer.shrunk .navbar {
+  width: 60%;
+  transition: width 0.3s ease;
+}
+
 .navbar .logo img {
   height: 40px;
 }
@@ -79,13 +84,11 @@ i {
 .submenu {
   list-style-type: none;
   padding-left: 20px;
-  display: none; /* Initially hidden */
+  display: none;
   margin-top: 0 !important;
 }
 
-.sub-menu {
-  margin-bottom: 8px;
-}
+
 .right {
   width: 500px !important;
   position: absolute;
@@ -102,12 +105,10 @@ i {
   color: #007bff;
 }
 
-/* When submenu is active, show it */
 .wrapper .submenu {
   display: block;
 }
 
-/* Styling for the overlay menu */
 .wrapper {
   position: fixed;
   top: 0;
@@ -144,13 +145,9 @@ i {
   font-size: 24px;
   text-align: justify !important;
 }
-.wrapper ul li a:active {
-  background-color: black;
-  padding: 10px 20px;
-  border-radius: 40px;
-  color: #ffcc01;
-}
-.wrapper ul li a:hover {
+.wrapper ul li a:active,
+.wrapper ul li a:hover,
+.wrapper ul li a:focus {
   background-color: black;
   padding: 10px 20px;
   border-radius: 40px;
@@ -175,8 +172,6 @@ i {
   justify-content: space-around;
 }
 .sclbtn {
-  /* height: 20px;
-  width: 20px; */
   border: 1px solid black;
   border-radius: 20px;
   padding: 5px 10px;
@@ -202,7 +197,7 @@ i {
 /* Responsive Design: Show the menu toggle on smaller screens */
 @media (max-width: 768px) {
   .navbar .menu {
-    display: none; /* Hide regular menu on mobile */
+    display: none;
   }
 
   .navbar .menu-toggle {

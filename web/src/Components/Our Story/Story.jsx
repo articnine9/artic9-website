@@ -1,42 +1,27 @@
 import React from "react";
 import "./Story.css";
 import Preloader from "../Preloader/Preloader";
-import Shape1 from "../../Assets/brs1.png";
-import Shape2 from "../../Assets/brs2.png";
 import Lead from "../../Assets/lead2.png";
-
-import ServiceTab from "./ServiceTab";
+import img from "../../Assets/Artic9 logo glow.png";
+import "../Our Story/ServiceTabStory";
+import ServiceTabStory from "../Our Story/ServiceTabStory";
 const Story = () => {
   return (
     <Preloader>
       <>
-        <section
-          id="taeled-bredcrumb"
-          className="taeled-bredcrumb-section position-relative our-banner "
-        >
-          <div
-            className="slider-deco1 position-absolute"
-            style={{ transform: "translateY(100px) rotateY(500deg)" }}
-          >
-            <img src={Shape1} alt="" />
+        <section className="abt">
+          <div className="storytitle">
+            <h1>our story</h1>
           </div>
-          <div
-            className="slider-deco2 position-absolute"
-            style={{ transform: "translateY(-100px) rotateY(-200deg)" }}
-          >
-            <img src={Shape2} alt="" />
-          </div>
-          <div className="background_overlay"></div>
-          <div className="container">
-            <div className="bredcrumb-content position-relative">
-              <div className="bredcrumb-title text-uppercase headline">
-                <h2>Our Story</h2>
-              </div>
+          <div className="storyimg">
+            <div className="firstblurcnt">
+              <div className="firstblur"></div>
             </div>
+            <img src={img} alt="" />
+            <div className="secondblur"></div>
           </div>
         </section>
-
-        <ServiceTab />
+        <ServiceTabStory />
 
         <section id="about-4" className="about-section-4">
           <div className="container">

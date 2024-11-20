@@ -1,159 +1,52 @@
-.our-banner {
-  z-index: 1;
-  background-image: url(../../Assets/banner1.png);
-  background-repeat: no-repeat;
+.storytitle {
+  width: 100%;
+  padding-left: 1%;
+}
+.storytitle h1 {
+  font-size: 130px;
+  text-transform: uppercase;
+}
+.storyimg {
+  height: 85vh;
+  width: 100%;
+  background: url(../../Assets/logoBg.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.taeled-bredcrumb-section .bredcrumb-content {
-  padding: 220px 0px 200px;
+.storyimg img {
+  object-fit: contain;
 }
-.taeled-bredcrumb-section .background_overlay {
-  z-index: -1;
-  opacity: 0.902;
-}
-.taeled-bredcrumb-section .bredcrumb-title h2 {
-  color: #000;
-  font-size: 50px;
-  font-weight: 400;
-}
-.taeled-bredcrumb-section .breadcrumb-item-wrap .breadcrumb {
-  bottom: 0;
-  right: 0;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 0;
-  padding: 0px 45px;
-  position: absolute;
-  display: inline-block;
-  background-color: #fff;
-}
-.taeled-bredcrumb-section .breadcrumb-item-wrap .breadcrumb .breadcrumb-item {
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
-.taeled-bredcrumb-section
-  .breadcrumb-item-wrap
-  .breadcrumb
-  .breadcrumb-item.active {
-  color: #ff4a17;
-}
-.taeled-bredcrumb-section
-  .breadcrumb-item-wrap
-  .breadcrumb-item
-  + .breadcrumb-item {
-  position: relative;
-  padding-left: 20px;
-}
-.taeled-bredcrumb-section
-  .breadcrumb-item-wrap
-  .breadcrumb-item
-  + .breadcrumb-item::before {
-  top: 18px;
-  left: 7px;
-  padding: 0;
-  width: 2px;
-  content: "";
-  height: 18px;
-  position: absolute;
-  background-color: #121e2d;
-}
-.taeled-bredcrumb-section .slider-deco2 {
-  display: block;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.bredcrumb-title {
-  font-family: "Bebas Neue", sans-serif;
-}
-
-/* Service */
-
-.service-tab-section {
-  padding: 60px 0px;
-}
-
-.service-tab-wrapper {
-  max-width: 520px;
-  padding-top: 45px;
-}
-.service-tab-wrapper .section-title span {
-  color: #ff4a17;
-}
-.service-tab-wrapper .service-tab-area {
-  margin-top: 45px;
-}
-.service-tab-wrapper .nav-tabs .nav-item.show .nav-link,
-.service-tab-wrapper .nav-tabs .nav-link.active,
-.service-tab-wrapper .nav-tabs .nav-link,
-.service-tab-wrapper .nav-tabs {
-  border: none;
-}
-.service-tab-wrapper .nav-tabs .nav-link {
-  border-radius: 0;
-}
-.service-tab-wrapper .nav-link {
-  padding: 0;
-}
-.service-tab-wrapper .service-tab-btn {
-  margin-bottom: 25px;
-}
-.service-tab-wrapper .service-tab-btn li {
-  margin-right: 10px;
-}
-.service-tab-wrapper .service-tab-btn li a {
-  width: 150px;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  position: relative;
-  padding-bottom: 15px;
-  font-family: "poppins", sans-serif;
-}
-.service-tab-wrapper .service-tab-btn li a:before,
-.service-tab-wrapper .service-tab-btn li a:after {
-  left: 0;
-  bottom: 0;
+.firstblurcnt {
   width: 100%;
-  content: "";
-  height: 3px;
-  position: absolute;
-  background-color: #eceef6;
+  height: 19%;
+  display: flex;
+  justify-content: end;
 }
-.service-tab-wrapper .service-tab-btn li a:after {
-  width: 0;
-  left: auto;
-  right: 0;
-  background-color: #ffcc01;
-  -webkit-transition: 0.3s all ease-in-out;
-  -o-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+.firstblur {
+  width: 40%;
+  height: 100%;
+  border-radius: 0 0 0 100px;
+  backdrop-filter: blur(5px);
 }
-.service-tab-wrapper .service-tab-btn li a.active:after {
-  left: 0;
+.secondblur {
+  width: 60%;
+  height: 51%;
+  border-radius: 0 100px 0 0;
+  backdrop-filter: blur(5px);
+}
+/* -------------------------------------Service-tab--------------------------------------------------------- */
+.story-tab {
+  border: 1px solid black;
   width: 100%;
-  right: auto;
 }
 
-.service-pricing .pricing-plan-tab-btn li a:before {
-  background-color: #fff;
-  border: 2px solid #fff;
-}
-
-.td-faq-body-content u {
-  color: #000;
-}
-
-.about-text-details {
-  width: 600px;
-}
-.section-title {
-  margin-bottom: 20px;
-}
-@media (max-width: 425px) {
-  .story-img {
-    display: none;
-  }
+.storycontainer {
+  width: 80%;
+  border: 1px solid black;
+  height: 700px;
+  margin: auto;
+  overflow: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }

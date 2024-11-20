@@ -1,0 +1,52 @@
+.blog-section-1 {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  padding: 50px 0px 50px;
+}
+
+.blog-cnt {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.blog-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.blog-title {
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 43px;
+  color: black;
+  text-align: center;
+}
+
+.blog-swiper {
+  width: 100%;
+}
+.swipers {
+  width: 100%;
+  padding: 50px 0px;
+
+}
+
+.swiperContainer {
+  height: 100%;
+  transform-origin: center center;
+  transform: rotate(6deg) translateZ(0);
+  width: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pstrs {
+  width: 90%;
+  border-radius: 20px;
+  object-fit: cover;
+}
