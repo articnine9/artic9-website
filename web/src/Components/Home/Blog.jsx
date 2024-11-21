@@ -6,10 +6,10 @@ import "../Header/Header.css";
 
 // Sample images for Blog Gallery
 import pstr1 from "../../Assets/b4.png";
-import pstr2 from "../../Assets/b4.png";
-import pstr3 from "../../Assets/b4.png";
-import pstr4 from "../../Assets/b4.png";
-import pstr5 from "../../Assets/b4.png";
+import pstr2 from "../../Assets/pstrs/Post-5-Smoke-free-Smile.jpg";
+import pstr3 from "../../Assets/pstrs/onam.jpg";
+import pstr4 from "../../Assets/pstrs/Sharon post 2.jpg";
+import pstr5 from "../../Assets/pstrs/Post 08.jpg";
 
 const blogImages = [
   { src: pstr1, alt: "Blog 1" },
@@ -64,6 +64,11 @@ const Blog = () => {
               <Slider {...blogsetting1}>
                 {blogImages.map((blogImage, index) => (
                   <div key={index} className="swiperContainer">
+                  <div className="pstrs"
+                  
+                  
+                  
+                  ></div>
                     <img
                       src={blogImage.src}
                       loading="lazy"
