@@ -9230,4 +9230,11 @@ select:visited {
 
 .slidercontainer {
   margin: 10px 0px !important;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidercontainer img{
+  object-fit: cover;
 }
