@@ -17,9 +17,8 @@ const Work = () => {
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState(""); // To track the form submission status
+  const [status, setStatus] = useState(""); 
 
-  // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -28,10 +27,9 @@ const Work = () => {
     });
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const form = e.target;
+    // const form = e.target;
     
     const response = await fetch("https://formspree.io/f/xeoqaydw", {
       method: "POST",

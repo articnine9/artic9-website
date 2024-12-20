@@ -8,7 +8,6 @@ import Client from "./Client";
 import Testimonial from "./Testimonial";
 // import Slider from "./Slider";
 import ServiceTab from "./ServiceTab";
-import Scrollup from "../Preloader/Scrollup";
 import Credits from "./Credits";
 import Blog from "./Blog";
 import Service from "./Service";
@@ -16,7 +15,6 @@ import Service from "./Service";
 const Home = () => {
   return (
     <>
-      <Scrollup />
       <Credits />
       {/* <Slider /> */}
       <div className="home">

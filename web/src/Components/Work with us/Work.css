@@ -1,4 +1,3 @@
-
 .contact-banner {
   background-image: url(../../Assets/brbg1.jpg);
   background-repeat: no-repeat;
@@ -649,14 +648,14 @@
   color: #fff;
 }
 
-::placeholder{
+::placeholder {
   color: black !important;
 }
-.bredcrumb-title h2{
+.bredcrumb-title h2 {
   color: #fff !important;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
   .contact-banner {
     margin-top: 90px;
     background-size: cover;
@@ -665,7 +664,7 @@
   .contact-banner img {
     display: none;
   }
-  .bredcrumb-title h2{
-    padding-bottom: 150px ;
+  .bredcrumb-title h2 {
+    padding-bottom: 150px;
   }
 }
